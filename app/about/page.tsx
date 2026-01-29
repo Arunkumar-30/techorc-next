@@ -65,7 +65,7 @@ export default function AboutPage() {
                                 Techorc is a leading software development company based in India. We are a team of passionate engineers, designers, and strategists committed to helping businesses achieve digital excellence.
                             </p>
                             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                                We believe in building long-term partnerships with our clients. By understanding your unique challenges, we craft solutions that not only solve today's problems but also pave the way for future growth.
+                                We believe in building long-term partnerships with our clients. By understanding your unique challenges, we craft solutions that not only solve today&apos;s problems but also pave the way for future growth.
                             </p>
                             <Link
                                 href="/contact"

@@ -12,7 +12,7 @@ export default function TestimonialCard({ quote, clientName, clientRole, clientI
         <div className="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col h-full hover:shadow-[0_15px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
             {/* Decorative Quote Icon opacity change on hover */}
             <div className="absolute top-6 right-8 text-6xl text-blue-100 font-serif opacity-50 group-hover:text-blue-50 group-hover:scale-110 transition-all duration-300">
-                "
+                &quot;
             </div>
 
             <div className="flex items-center gap-4 mb-6 relative z-10">
@@ -32,7 +32,7 @@ export default function TestimonialCard({ quote, clientName, clientRole, clientI
 
             <div className="relative z-10 flex-grow">
                 <p className="text-gray-600 leading-relaxed italic text-[15px]">
-                    "{quote}"
+                    &quot;{quote}&quot;
                 </p>
             </div>
 

@@ -22,10 +22,10 @@ export default function ContactPage() {
                         Contact Us
                     </span>
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                        Let’s Start a Conversation
+                        Let&apos;s Start a Conversation
                     </h1>
                     <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-                        Have a project idea? We'd love to hear about it. Fill out the form
+                        Have a project idea? We&apos;d love to hear about it. Fill out the form
                         below or reach out to us directly.
                     </p>
                 </div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                                         Send us a message
                                     </h3>
                                     <p className="text-gray-500 mb-8 font-light">
-                                        We're here to help and answer any questions you might have.
+                                        We&quot;re here to help and answer any questions you might have.
                                     </p>
                                     <ContactForm />
                                 </div>

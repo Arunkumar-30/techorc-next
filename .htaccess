@@ -1,0 +1,39 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+DirectoryIndex index.html index.php
+Options -Indexes
+
+# ----------------------------------
+# Force HTTPS
+# ----------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ----------------------------------
+# Remove www
+# ----------------------------------
+RewriteCond %{HTTP_HOST} ^www\.support\.techorc\.in$ [NC]
+RewriteRule ^(.*)$ https://support.techorc.in/$1 [R=301,L]
+
+# ----------------------------------
+# Allow Next.js assets
+# ----------------------------------
+RewriteRule ^_next/ - [L]
+
+# ----------------------------------
+# Allow API routes (if any)
+# ----------------------------------
+RewriteRule ^api/ - [L]
+
+# ----------------------------------
+# Allow existing files & folders
+# ----------------------------------
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ----------------------------------
+# NO SPA FALLBACK FOR NEXT.JS ❌
+# ----------------------------------
+</IfModule>

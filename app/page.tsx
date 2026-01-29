@@ -296,7 +296,7 @@ export default function Home() {
               Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0cf2f2] to-[#00a8f2]">transform</span> your business?
             </h2>
             <p className="text-blue-100 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-              We combine innovation, expertise, and passion to deliver software that drives real growth. Let's build something extraordinary together.
+              We combine innovation, expertise, and passion to deliver software that drives real growth. Let&quot;s build something extraordinary together.
             </p>
 
             <motion.div

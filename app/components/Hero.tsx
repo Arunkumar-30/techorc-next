@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="pt-32 pb-20 md:pt-48 md:pb-32 bg-gray-50/50 relative overflow-hidden">
+        <section className="pt-20 pb-20 md:pt-32 md:pb-26 bg-gray-50/50 relative overflow-hidden">
             {/* Background Decor Elements */}
             <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-100 rounded-full blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-purple-100 rounded-full blur-3xl opacity-30 translate-y-1/3 -translate-x-1/3"></div>
