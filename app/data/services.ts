@@ -2,6 +2,7 @@ export const servicesData = {
     "web-application-development": {
         title: "Web Application Development Company in India | Techorc",
         description: "Techorc provides top-notch web application development services in India, delivering secure, scalable, and high-performance web solutions for businesses of all sizes.",
+        keywords: ["Web App Development India", "Custom Web Development", "Scalable Web Architecture", "Enterprise Web Solutions", "Full-stack Web Development"],
         heroTitle: "Web Application Development in India",
         heroDescription: "We build secure, scalable, and high-performance web applications using modern technologies to support enterprise workflows.",
         mainTitle: "Web Application Development Services in India",
@@ -16,6 +17,7 @@ export const servicesData = {
     "custom-software-development": {
         title: "Custom Software Development Company in India | Techorc",
         description: "Techorc is a custom software development company in India offering bespoke software solutions tailored to solve complex business challenges.",
+        keywords: ["Custom Software Development India", "Bespoke Software Solutions", "Software Modernization", "Enterprise Software Development", "SaaS Development India"],
         heroTitle: "Custom Software Development Services",
         heroDescription: "We design and develop custom software solutions tailored to solve complex business challenges and drive scalable growth.",
         mainTitle: "Tailored Software Solutions for Your Business",
@@ -30,6 +32,7 @@ export const servicesData = {
     "mobile-app-development": {
         title: "Mobile App Development Company in India | Techorc",
         description: "We develop high-quality Android and iOS mobile applications tailored for startups and enterprises in India.",
+        keywords: ["Mobile App Development India", "iOS App Development", "Android App Development", "React Native Developers", "Flutter App Development"],
         heroTitle: "Mobile App Development Services",
         heroDescription: "We develop high-quality Android and iOS mobile applications tailored for startups and enterprises.",
         mainTitle: "Native & Hybrid Mobile Solutions",
@@ -44,6 +47,7 @@ export const servicesData = {
     "cloud-integration-services": {
         title: "Cloud Integration Services Company in India | Techorc",
         description: "We help businesses migrate, integrate, and optimize applications using secure cloud infrastructure solutions.",
+        keywords: ["Cloud Integration Services India", "AWS Migration", "Cloud Native Development", "DevOps Automation", "Serverless Architecture"],
         heroTitle: "Cloud Integration Services",
         heroDescription: "We help businesses migrate, integrate, and optimize applications using secure cloud infrastructure solutions.",
         mainTitle: "Secure Cloud Solutions & Migration",
@@ -58,6 +62,7 @@ export const servicesData = {
     "ai-ml-development": {
         title: "AI & ML Development Company in India | Techorc",
         description: "Automate business operations using AI, machine learning, and data-driven software solutions.",
+        keywords: ["AI ML Development India", "Machine Learning Services", "Predictive Analytics", "Natural Language Processing", "Computer Vision Solutions"],
         heroTitle: "AI, ML & Data Solutions",
         heroDescription: "Automate business operations using AI, machine learning, and data-driven software solutions.",
         mainTitle: "Intelligent Solutions for Modern Business",
@@ -72,6 +77,7 @@ export const servicesData = {
     "it-consulting-services": {
         title: "IT Consulting Services Company in India | Techorc",
         description: "Our IT consulting services help businesses choose the right technologies for long-term digital growth.",
+        keywords: ["IT Consulting Services India", "Technology Strategy", "Digital Transformation Consulting", "Software Architecture Design", "Security Consulting"],
         heroTitle: "IT Consulting Services",
         heroDescription: "Our IT consulting services help businesses choose the right technologies for long-term digital growth.",
         mainTitle: "Strategic Digital Transformation",

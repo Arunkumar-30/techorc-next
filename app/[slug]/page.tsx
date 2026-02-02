@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: service.title,
         description: service.description,
+        keywords: (service as any).keywords || [],
         alternates: {
             canonical: `https://support.techorc.in/${slug}`,
         },
