@@ -14,7 +14,7 @@ export default function Header() {
     };
 
     return (
-        <div id="Hero" className="relative h-[80px]">
+        <header>
             <div
                 role="banner"
                 className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100/50 shadow-sm transition-all duration-300"
@@ -38,6 +38,21 @@ export default function Header() {
                     <nav role="navigation" className="hidden lg:flex items-center gap-8">
                         <Link href="/" className="text-gray-700 hover:text-[#00a8f2] font-semibold transition-colors text-[15px]">Home</Link>
 
+                        {/* Company Dropdown */}
+                        <div className="relative group">
+                            <button className="text-gray-700 hover:text-[#00a8f2] font-semibold transition-colors flex items-center gap-1 text-[15px] py-4">
+                                Company
+                                <svg className="w-4 h-4 transition-transform group-hover:rotate-180 text-[#00a8f2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div className="absolute left-0 mt-0 w-48 bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2 z-50">
+                                <div className="grid gap-1">
+                                    <Link href="/about" className="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-blue-50 hover:text-[#00a8f2] rounded-lg transition-colors">About Us</Link>
+                                    <Link href="/team" className="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-blue-50 hover:text-[#00a8f2] rounded-lg transition-colors">Our Team</Link>
+                                    <Link href="/careers" className="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-blue-50 hover:text-[#00a8f2] rounded-lg transition-colors">Careers</Link>
+                                </div>
+                            </div>
+                        </div>
+
                         {/* Services Dropdown */}
                         <div className="relative group">
                             <button className="text-gray-700 hover:text-[#00a8f2] font-semibold transition-colors flex items-center gap-1 text-[15px] py-4">
@@ -59,8 +74,7 @@ export default function Header() {
                             </div>
                         </div>
 
-                        <Link href="/about" className="text-gray-700 hover:text-[#00a8f2] font-semibold transition-colors text-[15px]">About us</Link>
-                        <Link href="/#Testimonial" className="text-gray-700 hover:text-[#00a8f2] font-semibold transition-colors text-[15px]">Testimonial</Link>
+                        <Link href="/#Testimonial" className="text-gray-700 hover:text-[#00a8f2] font-semibold transition-colors text-[15px]">Success Stories</Link>
                         <Link
                             href="/contact"
                             className="bg-gradient-to-r from-[#0cf2f2] to-[#00a8f2] hover:from-[#00a8f2] hover:to-[#008ecb] text-white px-7 py-2.5 rounded-full shadow-lg shadow-blue-200 hover:shadow-blue-300 transition-all font-bold text-[15px] transform hover:-translate-y-0.5"
@@ -85,6 +99,8 @@ export default function Header() {
                 <div className={`lg:hidden bg-white/95 backdrop-blur-xl absolute w-full border-t border-gray-100 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[85vh] opacity-100 overflow-y-auto' : 'max-h-0 opacity-0'}`}>
                     <div className="flex flex-col p-6 gap-4">
                         <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Home</Link>
+
+                        <Link href="/about" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Company</Link>
 
                         {/* Mobile Services Accordion */}
                         <div className="border-b border-gray-50 pb-2">
@@ -121,6 +137,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }

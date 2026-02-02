@@ -3,15 +3,13 @@
 import Hero from "./components/Hero";
 import ServiceCard from "./components/ServiceCard";
 import TestimonialCard from "./components/TestimonialCard";
-import AboutFeature from "./components/AboutFeature";
-import ContactForm from "./components/ContactForm";
 import TechStack from "./components/TechStack";
 import Link from "next/link";
 import Image from "next/image";
 
 // Swiper Imports
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { motion } from "framer-motion";
@@ -92,33 +90,6 @@ export default function HomeClient() {
             name: "Yari Restaurant",
             role: "Billing System",
             image: "/images/client-yari.png"
-        }
-    ];
-
-    const features = [
-        {
-            title: "Agile",
-            description: "Keeping customers at the centre of the service delivery is in our traits. Our quick turnaround time and proactive approach assist our clients to rehearse the future.",
-            icon: "/images/quick-&-easy.svg",
-            color: "bg-green-100"
-        },
-        {
-            title: "Smart Solutions",
-            description: "Our machine first approach empowers you to bypass the repetitive manual tasks with greater levels of automation through AI and Cognitive capabilities.",
-            icon: "/images/smart-solutions.svg",
-            color: "bg-pink-100"
-        },
-        {
-            title: "Scalability",
-            description: "When we solve business challenges, we envision solutions that can be scaled. Our dynamic resourcing can replicate any solution for a much larger playing ground.",
-            icon: "/images/scalability.svg",
-            color: "bg-yellow-100"
-        },
-        {
-            title: "Cost-effective",
-            description: "Our flexible, reliable and efficient service delivery sets us apart and helps our clients perform to the best of their capacities in this competitive market.",
-            icon: "/images/cost-effective.svg",
-            color: "bg-blue-100"
         }
     ];
 

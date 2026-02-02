@@ -26,8 +26,8 @@ export default function Footer() {
                             {[
                                 { name: 'linkedin', icon: '/images/linkedin.svg', url: 'https://www.linkedin.com/company/techorc' },
                                 { name: 'twitter', icon: '/images/twitter.svg', url: 'https://twitter.com/techorc' },
-                                { name: 'facebook', icon: '/images/facebook.svg', url: 'https://www.facebook.com/Techorc' },
-                                // { name: 'instagram', icon: '/images/instagram.svg', url: 'https://www.instagram.com/techorc' }
+                                { name: 'facebook', icon: '/images/facebook.svg', url: 'https://www.facebook.com/techorc' },
+                                { name: 'instagram', icon: '/images/instagram.svg', url: 'https://www.instagram.com/techorc' }
                             ].map((social) => (
                                 <Link
                                     href={social.url}
@@ -49,19 +49,33 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Services Links */}
+                    {/* Legal & Support Links */}
                     <div>
                         <h4 className="font-bold text-white text-lg mb-6 relative inline-block">
-                            Services
+                            Legal & Support
                             <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-500 rounded-full"></span>
                         </h4>
                         <ul className="space-y-4 text-[15px]">
-                            {['Web Development', 'Mobile Apps', 'Cloud Integration', 'AI & ML Solutions'].map((item, idx) => {
+                            <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms-of-service" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
+                            <li><Link href="/cookie-policy" className="hover:text-blue-400 transition-colors">Cookie Policy</Link></li>
+                            <li><Link href="/support" className="hover:text-blue-400 transition-colors">Help Center</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Service Quick Links */}
+                    <div>
+                        <h4 className="font-bold text-white text-lg mb-6 relative inline-block">
+                            Our Services
+                            <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-500 rounded-full"></span>
+                        </h4>
+                        <ul className="space-y-4 text-[15px]">
+                            {['Custom Software', 'Web Apps', 'Mobile Apps', 'Cloud Solutions'].map((item, idx) => {
                                 const hrefs = [
+                                    "/custom-software-development",
                                     "/web-application-development",
                                     "/mobile-app-development",
-                                    "/cloud-integration-services",
-                                    "/ai-ml-development"
+                                    "/cloud-integration-services"
                                 ];
                                 return (
                                     <li key={idx}>
@@ -75,21 +89,6 @@ export default function Footer() {
                                     </li>
                                 )
                             })}
-                        </ul>
-                    </div>
-
-                    {/* Quick Link & Legal */}
-                    <div>
-                        <h4 className="font-bold text-white text-lg mb-6 relative inline-block">
-                            Company
-                            <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-500 rounded-full"></span>
-                        </h4>
-                        <ul className="space-y-4 text-[15px]">
-                            <li><Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
-                            <li><Link href="/#Testimonial" className="hover:text-blue-400 transition-colors">Testimonials</Link></li>
-                            <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link></li>
-                            <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="#" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
                         </ul>
                     </div>
 
