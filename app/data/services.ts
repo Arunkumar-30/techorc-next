@@ -1,4 +1,15 @@
-export const servicesData = {
+export interface Service {
+    title: string;
+    description: string;
+    keywords: string[];
+    heroTitle: string;
+    heroDescription: string;
+    mainTitle: string;
+    mainDescription: string;
+    features: { title: string; description: string }[];
+}
+
+export const servicesData: Record<string, Service> = {
     "web-application-development": {
         title: "Web Application Development Company in India | Techorc",
         description: "Techorc provides top-notch web application development services in India, delivering secure, scalable, and high-performance web solutions for businesses of all sizes.",
