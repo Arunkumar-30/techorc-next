@@ -3,9 +3,10 @@ import { Metadata } from "next";
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
 
 export const metadata: Metadata = {
-    title: "Contact Us | Techorc - Custom Software Development Solutions",
+    title: "Contact Techorc | Get a Quote for Your Next Digital Project",
     description:
-        "Get in touch with Techorc for your custom software development needs. We are ready to help you solve specific business challenges.",
+        "Ready to transform your business? Contact Techorc today for custom software development, web apps, and AI solutions. Based in Coimbatore, Tamil Nadu, India.",
+    keywords: ["Contact Techorc", "Hire Software Developers India", "Software Development Quote", "IT Services Coimbatore"],
 };
 
 export default function ContactPage() {
@@ -127,7 +128,7 @@ export default function ContactPage() {
 
                         {/* Contact Form */}
                         <div className="lg:sticky lg:top-32 h-fit">
-                            <div className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-blue-500/5 border border-gray-100 relative overflow-hidden">
+                            <div className="bg-white p-6 md:p-12 rounded-3xl md:rounded-[2.5rem] shadow-2xl shadow-blue-500/5 border border-gray-100 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full -mr-16 -mt-16 opacity-50"></div>
 
                                 <div className="relative z-10">

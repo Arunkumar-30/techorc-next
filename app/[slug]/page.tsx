@@ -56,7 +56,7 @@ export default async function ServicePage({ params }: Props) {
             {/* Main Content Area */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4 lg:px-8">
-                    <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex flex-col-reverse lg:flex-row gap-12">
 
                         {/* Sidebar (Left) */}
                         <aside className="lg:w-1/4">

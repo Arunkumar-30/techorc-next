@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "About Us | Techorc - Custom Software Development Company",
-    description: "Learn more about Techorc, a custom software development company in India delivering scalable solutions tailored to your business needs.",
+    title: "About Techorc | High-Performance Software Development Team in India",
+    description: "Discover Techorc's story. We are a specialized team of software engineers and designers in India dedicated to building scalable, high-performance digital solutions.",
+    keywords: ["About Techorc", "Software Engineering Team India", "Digital Excellence", "Agile Development India"],
 };
 
 export default function AboutPage() {

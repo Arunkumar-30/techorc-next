@@ -44,7 +44,7 @@ export default function Header() {
                                 Our Services
                                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180 text-[#00a8f2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
-                            <div className="absolute -left-22 mt-0 w-80 bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-3 z-50">
+                            <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-80 bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-3 z-50">
                                 <div className="grid gap-1">
                                     {Object.entries(servicesData).map(([key, data]) => (
                                         <Link
@@ -83,7 +83,7 @@ export default function Header() {
 
                 {/* Mobile Navigation */}
                 <div className={`lg:hidden bg-white/95 backdrop-blur-xl absolute w-full border-t border-gray-100 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[85vh] opacity-100 overflow-y-auto' : 'max-h-0 opacity-0'}`}>
-                    <div className="flex flex-col p-6 gap-6">
+                    <div className="flex flex-col p-6 gap-4">
                         <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Home</Link>
 
                         {/* Mobile Services Accordion */}
@@ -95,13 +95,13 @@ export default function Header() {
                                 Our Services
                                 <svg className={`w-5 h-5 text-[#00a8f2] transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
-                            <div className={`mt-3 space-y-2 pl-4 border-l-2 border-[#00a8f2]/20 transition-all duration-300 ${isServicesOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                            <div className={`mt-3 space-y-1 pl-4 border-l-2 border-[#00a8f2]/20 transition-all duration-300 ${isServicesOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                                 {Object.entries(servicesData).map(([key, data]) => (
                                     <Link
                                         key={key}
                                         href={`/${key}`}
                                         onClick={() => setIsOpen(false)}
-                                        className="block py-2 text-sm font-medium text-gray-600 hover:text-[#00a8f2]"
+                                        className="block py-2 text-[15px] font-medium text-gray-600 hover:text-[#00a8f2]"
                                     >
                                         {data.heroTitle}
                                     </Link>
@@ -114,7 +114,7 @@ export default function Header() {
                         <Link
                             href="/contact"
                             onClick={() => setIsOpen(false)}
-                            className="bg-gradient-to-r from-[#0cf2f2] to-[#00a8f2] text-white px-6 py-3 rounded-full shadow-md text-center font-bold text-lg mt-4"
+                            className="bg-gradient-to-r from-[#0cf2f2] to-[#00a8f2] text-white px-6 py-3 rounded-full shadow-md text-center font-bold text-lg mt-2"
                         >
                             Contact Us
                         </Link>

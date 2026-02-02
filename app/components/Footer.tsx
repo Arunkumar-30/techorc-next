@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer className="bg-gray-900 border-t border-gray-800 text-gray-400">
-            <div className="container mx-auto px-4 pt-20 pb-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+            <div className="container mx-auto px-4 pt-16 pb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
                     {/* Brand Section */}
                     <div className="space-y-6">
                         <Link href="/" aria-label="Techorc home" className="inline-block">

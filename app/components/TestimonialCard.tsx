@@ -9,9 +9,9 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ quote, clientName, clientRole, clientImage }: TestimonialCardProps) {
     return (
-        <div className="bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col h-full hover:shadow-[0_15px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-gray-100 flex flex-col h-full hover:shadow-[0_15px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group">
             {/* Decorative Quote Icon opacity change on hover */}
-            <div className="absolute top-6 right-8 text-6xl text-blue-100 font-serif opacity-50 group-hover:text-blue-50 group-hover:scale-110 transition-all duration-300">
+            <div className="absolute top-4 right-6 md:top-6 md:right-8 text-5xl md:text-6xl text-blue-100 font-serif opacity-50 group-hover:text-blue-50 group-hover:scale-110 transition-all duration-300">
                 &quot;
             </div>
 

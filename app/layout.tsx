@@ -22,13 +22,17 @@ export const metadata: Metadata = {
     "Techorc is a leading software and IT solutions company in India, delivering web development, mobile app development, custom software, UI/UX design, and digital solutions.",
   keywords: [
     "Techorc",
-    "Software Development Company",
-    "IT Solutions Company",
-    "Web Development Company",
-    "Mobile App Development",
+    "Software Development Company India",
+    "IT Solutions Company Coimbatore",
+    "Web Development Company India",
+    "Mobile App Development Services",
     "Custom Software Development",
-    "UI UX Design Services",
-    "Digital Solutions India",
+    "Tailored IT Solutions",
+    "Digital Transformation Services",
+    "Cloud Integration Solutions",
+    "AI & ML Development India",
+    "Enterprise Software Development",
+    "UI UX Design Services India",
   ],
   icons: {
     icon: "/favicon.png",
@@ -63,13 +67,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-     
+
 
       <body
         className={`${montserrat.variable} ${openSans.variable} font-sans antialiased bg-gray-50 text-gray-900`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="min-h-screen">
+          <div className="max-w-[2000px] mx-auto overflow-hidden">
+            {children}
+          </div>
+        </main>
         <Footer />
       </body>
     </html>

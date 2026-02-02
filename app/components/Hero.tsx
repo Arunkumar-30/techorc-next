@@ -15,10 +15,10 @@ export default function Hero() {
                         <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-[#00a8f2] text-sm font-bold tracking-wide mb-6 border border-blue-100/50">
                             🚀 Innovation Driven Development
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.15] mb-6">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extrabold text-gray-900 leading-[1.15] mb-6">
                             Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0cf2f2] via-[#00a8f2] to-[#9d12bb]">Scalable</span> Software Solutions
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg leading-relaxed">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 max-w-lg leading-relaxed">
                             We empower businesses to seize new opportunities with custom consulting, development, and support services tailored to your goals.
                         </p>
 
@@ -40,7 +40,7 @@ export default function Hero() {
                         {/* Partner Logos - Fixed Alignment */}
                         <div className="border-t border-gray-200 pt-8">
                             <p className="text-sm font-semibold text-gray-400 mb-6 uppercase tracking-wider">Trusted Technology Partners</p>
-                            <div className="flex flex-wrap items-center gap-8 md:gap-12 grayscale opacity-200 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                            <div className="flex flex-wrap items-center gap-6 md:gap-12 grayscale opacity-200 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                                 <div className="h-8 w-auto relative">
                                     <Image src="/images/amazon.svg" height={32} width={100} alt="Amazon" className="h-full w-auto object-contain" />
                                 </div>
