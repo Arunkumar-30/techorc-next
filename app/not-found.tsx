@@ -13,7 +13,7 @@ export default function NotFoundPage() {
         </p>
         <Link
           href="/"
-          className="px-6 py-3 bg-red-600 text-white rounded-md hover:bg-red-700"
+          className="bg-gradient-to-r from-[#0cf2f2] to-[#00a8f2] hover:from-[#00a8f2] hover:to-[#008ecb] text-white px-7 py-2.5 rounded-full shadow-lg shadow-blue-200 hover:shadow-blue-300 transition-all font-bold text-[15px] transform hover:-translate-y-0.5"
         >
           Back to Home
         </Link>

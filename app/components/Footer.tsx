@@ -26,8 +26,8 @@ export default function Footer() {
                             {[
                                 { name: 'linkedin', icon: '/images/linkedin.svg', url: 'https://www.linkedin.com/company/techorc' },
                                 { name: 'twitter', icon: '/images/twitter.svg', url: 'https://twitter.com/techorc' },
-                                { name: 'facebook', icon: '/images/facebook.svg', url: 'https://www.facebook.com/techorc' },
-                                { name: 'instagram', icon: '/images/instagram.svg', url: 'https://www.instagram.com/techorc' }
+                                { name: 'facebook', icon: '/images/facebook.svg', url: 'https://www.facebook.com/Techorc' },
+                                // { name: 'instagram', icon: '/images/instagram.svg', url: 'https://www.instagram.com/techorc' }
                             ].map((social) => (
                                 <Link
                                     href={social.url}

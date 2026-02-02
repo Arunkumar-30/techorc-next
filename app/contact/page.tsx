@@ -113,21 +113,20 @@ export default function ContactPage() {
 
                             {/* Map */}
                             <div className="mt-12 w-full h-80 rounded-3xl overflow-hidden  border border-gray-100 relative group">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.627940279079!2d76.98687747586969!3d10.915854756604784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858dd36f76da9%3A0x79fc48718fdc0626!2sTechorc%20Software%20Solutions!5e0!3m2!1sen!2sin!4v1769685502604!5m2!1sen!2sin"
-                                    width="100%"
-                                    height="100%"
-                                    loading="lazy"
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.627940279079!2d76.98687747586969!3d10.915854756604784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858dd36f76da9%3A0x79fc48718fdc0626!2sTechorc%20Software%20Solutions!5e0!3m2!1sen!2sin!4v1770023431933!5m2!1sen!2sin"
+                                    width="100%" height="100%"
+                                    style={{ border: 0 }}
                                     allowFullScreen
-                                    title="Techorc Office Location"
+                                    loading="lazy"
                                     className="absolute  transition-all duration-700"
-                                />
+                                    title="Techorc Office Location"
+                                    referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                             </div>
                         </div>
 
                         {/* Contact Form */}
-                        <div className="lg:sticky lg:top-32 h-fit">
+                        <div className="lg:sticky lg:top-32 h-fit self-start">
                             <div className="bg-white p-6 md:p-12 rounded-3xl md:rounded-[2.5rem] shadow-2xl shadow-blue-500/5 border border-gray-100 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full -mr-16 -mt-16 opacity-50"></div>
 
