@@ -3,7 +3,46 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Help Center | Techorc Support",
-    description: "Get help and support for Techorc services. Find answers to frequently asked questions or contact our support team.",
+    description:
+        "Get help and support for Techorc services. Find answers to frequently asked questions or contact our support team.",
+    keywords: [
+        "Techorc Support",
+        "Help Center",
+        "IT Support India",
+        "Software Maintenance India",
+        "Tech FAQs",
+        "Customer Support Techorc",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/support",
+    },
+    openGraph: {
+        title: "Help Center | Techorc Support",
+        description:
+            "Get help and support for Techorc services. Find answers to frequently asked questions or contact our support team.",
+        url: "https://support.techorc.in/support",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Help Center | Techorc Support",
+        description:
+            "Get help and support for Techorc services. Find answers to frequently asked questions or contact our support team.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 const faqs = [

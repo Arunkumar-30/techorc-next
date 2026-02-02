@@ -2,7 +2,46 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Our Team | Meet the Techorc Experts",
-    description: "Meet the talented team behind Techorc. Our experienced developers, designers, and strategists are committed to delivering exceptional software solutions.",
+    description:
+        "Meet the talented team behind Techorc. Our experienced developers, designers, and strategists are committed to delivering exceptional software solutions.",
+    keywords: [
+        "Techorc Team",
+        "Software Experts India",
+        "IT Professionals India",
+        "Tech Leadership",
+        "Software Developers India",
+        "Software Engineers Coimbatore",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/team",
+    },
+    openGraph: {
+        title: "Our Team | Meet the Techorc Experts",
+        description:
+            "Meet the talented team behind Techorc. Our experienced developers, designers, and strategists are committed to delivering exceptional software solutions.",
+        url: "https://support.techorc.in/team",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Our Team | Meet the Techorc Experts",
+        description:
+            "Meet the talented team behind Techorc. Our experienced developers, designers, and strategists are committed to delivering exceptional software solutions.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 const teamMembers = [

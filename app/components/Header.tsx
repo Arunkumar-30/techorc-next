@@ -8,6 +8,7 @@ import { servicesData } from "../data/services";
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false); // For mobile accordion
+    const [isCompanyOpen, setIsCompanyOpen] = useState(false); // For mobile Company accordion
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -100,7 +101,21 @@ export default function Header() {
                     <div className="flex flex-col p-6 gap-4">
                         <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Home</Link>
 
-                        <Link href="/about" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Company</Link>
+                        {/* Mobile Company Accordion */}
+                        <div className="border-b border-gray-50 pb-2">
+                            <button
+                                onClick={() => setIsCompanyOpen(!isCompanyOpen)}
+                                className="flex items-center justify-between w-full text-gray-800 hover:text-[#00a8f2] font-semibold text-lg"
+                            >
+                                Company
+                                <svg className={`w-5 h-5 text-[#00a8f2] transition-transform ${isCompanyOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div className={`mt-3 space-y-1 pl-4 border-l-2 border-[#00a8f2]/20 transition-all duration-300 ${isCompanyOpen ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                                <Link href="/about" onClick={() => setIsOpen(false)} className="block py-2 text-[15px] font-medium text-gray-600 hover:text-[#00a8f2]">About Us</Link>
+                                <Link href="/team" onClick={() => setIsOpen(false)} className="block py-2 text-[15px] font-medium text-gray-600 hover:text-[#00a8f2]">Our Team</Link>
+                                <Link href="/careers" onClick={() => setIsOpen(false)} className="block py-2 text-[15px] font-medium text-gray-600 hover:text-[#00a8f2]">Careers</Link>
+                            </div>
+                        </div>
 
                         {/* Mobile Services Accordion */}
                         <div className="border-b border-gray-50 pb-2">
@@ -125,8 +140,7 @@ export default function Header() {
                             </div>
                         </div>
 
-                        <Link href="/about" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">About us</Link>
-                        <Link href="/#Testimonial" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Testimonial</Link>
+                        <Link href="/#Testimonial" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-[#00a8f2] font-semibold text-lg border-b border-gray-50 pb-2">Success Stories</Link>
                         <Link
                             href="/contact"
                             onClick={() => setIsOpen(false)}

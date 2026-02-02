@@ -2,7 +2,45 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Cookie Policy | Techorc",
-    description: "Learn how Techorc uses cookies to enhance your browsing experience and improve our website services.",
+    description:
+        "Learn how Techorc uses cookies to enhance your browsing experience and improve our website services.",
+    keywords: [
+        "Cookie Policy",
+        "Website Cookies",
+        "User Browsing",
+        "Data Tracking India",
+        "Browser Cookies Techorc",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/cookie-policy",
+    },
+    openGraph: {
+        title: "Cookie Policy | Techorc",
+        description:
+            "Learn how Techorc uses cookies to enhance your browsing experience and improve our website services.",
+        url: "https://support.techorc.in/cookie-policy",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Cookie Policy | Techorc",
+        description:
+            "Learn how Techorc uses cookies to enhance your browsing experience and improve our website services.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 export default function CookiePolicyPage() {

@@ -14,8 +14,9 @@ const openSans = Open_Sans({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://support.techorc.in"),
   title: {
-    default: "Techorc | Software & IT Solutions Company",
+    default: "Techorc | Software & IT Solutions Company India",
     template: "%s | Techorc",
   },
   description:
@@ -37,19 +38,30 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
-  metadataBase: new URL("https://www.techorc.in"),
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "Techorc | Software & IT Solutions Company",
+    title: "Techorc | Software & IT Solutions Company India",
     description:
       "Techorc is a trusted software and IT solutions company in India offering web development, mobile apps, custom software, and UI/UX design services.",
-    url: "https://www.techorc.in",
+    url: "https://support.techorc.in",
     siteName: "Techorc",
     type: "website",
+    locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Techorc | Software & IT Solutions Company",
+    title: "Techorc | Software & IT Solutions Company India",
     description:
       "Leading software and IT solutions company in India specializing in web development, mobile apps, and custom software.",
     images: ["/favicon.png"],

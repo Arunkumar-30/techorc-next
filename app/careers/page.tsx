@@ -3,7 +3,46 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Careers at Techorc | Join Our Team",
-    description: "Explore career opportunities at Techorc. We're looking for talented developers, designers, and innovators to join our growing team.",
+    description:
+        "Explore career opportunities at Techorc. We're looking for talented developers, designers, and innovators to join our growing team.",
+    keywords: [
+        "Techorc Careers",
+        "Jobs at Techorc",
+        "Software Development Jobs India",
+        "UI UX Design Jobs India",
+        "IT Careers India",
+        "Tech Jobs Coimbatore",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/careers",
+    },
+    openGraph: {
+        title: "Careers at Techorc | Join Our Team",
+        description:
+            "Explore career opportunities at Techorc. We're looking for talented developers, designers, and innovators to join our growing team.",
+        url: "https://support.techorc.in/careers",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Careers at Techorc | Join Our Team",
+        description:
+            "Explore career opportunities at Techorc. We're looking for talented developers, designers, and innovators to join our growing team.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 export default function CareersPage() {

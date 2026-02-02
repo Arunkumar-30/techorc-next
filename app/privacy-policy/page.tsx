@@ -2,7 +2,45 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Privacy Policy | Techorc",
-    description: "Read Techorc's Privacy Policy to understand how we collect, use, and protect your personal information.",
+    description:
+        "Read Techorc's Privacy Policy to understand how we collect, use, and protect your personal information.",
+    keywords: [
+        "Privacy Policy",
+        "Data Protection",
+        "Techorc Privacy",
+        "User Data Safety",
+        "Data Privacy India",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/privacy-policy",
+    },
+    openGraph: {
+        title: "Privacy Policy | Techorc",
+        description:
+            "Read Techorc's Privacy Policy to understand how we collect, use, and protect your personal information.",
+        url: "https://support.techorc.in/privacy-policy",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Privacy Policy | Techorc",
+        description:
+            "Read Techorc's Privacy Policy to understand how we collect, use, and protect your personal information.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 export default function PrivacyPolicyPage() {

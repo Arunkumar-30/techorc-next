@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="pt-20 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-36 md:pb-20 lg:pt-36 lg:pb-24 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
             {/* Enhanced Background Decor Elements */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-cyan-200/40 to-blue-200/40 rounded-full blur-[120px] -translate-y-1/3 translate-x-1/4"></div>
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-purple-200/30 to-pink-200/30 rounded-full blur-[100px] translate-y-1/4 -translate-x-1/4"></div>

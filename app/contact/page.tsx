@@ -3,10 +3,47 @@ import { Metadata } from "next";
 import { FiMapPin, FiPhone, FiMail, FiClock } from "react-icons/fi";
 
 export const metadata: Metadata = {
-    title: "Contact Techorc | Get a Quote for Your Next Digital Project",
+    title: "Contact Techorc | Get a Quote for Your Software Project",
     description:
-        "Ready to transform your business? Contact Techorc today for custom software development, web apps, and AI solutions. Based in Coimbatore, Tamil Nadu, India.",
-    keywords: ["Contact Techorc", "Hire Software Developers India", "Software Development Quote", "IT Services Coimbatore"],
+        "Get in touch with Techorc today. Whether you have a project idea, need IT consulting, or want to join our team, we're here to help you achieve your goals.",
+    keywords: [
+        "Contact Techorc",
+        "Hire Software Developers India",
+        "Software Development Quote",
+        "IT Services Coimbatore",
+        "Tech Support India",
+        "Software Development Inquiry",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/contact",
+    },
+    openGraph: {
+        title: "Contact Techorc | Get a Quote for Your Software Project",
+        description:
+            "Get in touch with Techorc today. Whether you have a project idea, need IT consulting, or want to join our team, we're here to help you achieve your goals.",
+        url: "https://support.techorc.in/contact",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Techorc | Get a Quote for Your Software Project",
+        description:
+            "Get in touch with Techorc today. Whether you have a project idea, need IT consulting, or want to join our team, we're here to help you achieve your goals.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 export default function ContactPage() {
@@ -84,7 +121,7 @@ export default function ContactPage() {
                                         </a>
                                         <div className="flex items-center gap-2 text-sm text-gray-500">
                                             <FiClock />
-                                            <span>Mon–Fri: 9am – 6pm IST</span>
+                                            <span>Mon–Sat: 10am – 7pm IST</span>
                                         </div>
                                     </div>
                                 </div>

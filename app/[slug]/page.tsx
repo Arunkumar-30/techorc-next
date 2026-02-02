@@ -21,6 +21,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: service.title,
         description: service.description,
+        alternates: {
+            canonical: `https://support.techorc.in/${slug}`,
+        },
+        openGraph: {
+            title: service.title,
+            description: service.description,
+            url: `https://support.techorc.in/${slug}`,
+            siteName: "Techorc",
+            type: "website",
+            locale: "en_IN",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: service.title,
+            description: service.description,
+        },
+        robots: {
+            index: true,
+            follow: true,
+            nocache: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-snippet": -1,
+                "max-image-preview": "large",
+                "max-video-preview": -1,
+            },
+        },
     };
 }
 

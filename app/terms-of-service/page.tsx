@@ -2,7 +2,45 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Terms of Service | Techorc",
-    description: "Read Techorc's Terms of Service to understand the rules and guidelines for using our website and services.",
+    description:
+        "Read Techorc's Terms of Service to understand the rules and guidelines for using our website and services.",
+    keywords: [
+        "Terms of Service",
+        "Techorc Terms",
+        "Legal Agreement",
+        "Service Rules",
+        "User Responsibility India",
+    ],
+    alternates: {
+        canonical: "https://support.techorc.in/terms-of-service",
+    },
+    openGraph: {
+        title: "Terms of Service | Techorc",
+        description:
+            "Read Techorc's Terms of Service to understand the rules and guidelines for using our website and services.",
+        url: "https://support.techorc.in/terms-of-service",
+        siteName: "Techorc",
+        type: "website",
+        locale: "en_IN",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Terms of Service | Techorc",
+        description:
+            "Read Techorc's Terms of Service to understand the rules and guidelines for using our website and services.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
+    },
 };
 
 export default function TermsOfServicePage() {

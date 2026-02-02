@@ -42,7 +42,10 @@ export default function ContactForm() {
                 <h3 className="text-2xl font-bold text-green-700 mb-4">Message Sent!</h3>
                 <p className="text-green-600 mb-6">Thank you for contacting us. We will get back to you shortly.</p>
                 <button
-                    onClick={() => setStatus("idle")}
+                    onClick={() => {
+                        setFormData({ name: "", email: "", phone: "", field: "" });
+                        setStatus("idle");
+                    }}
                     className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700"
                 >
                     Send Another
