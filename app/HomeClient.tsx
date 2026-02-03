@@ -98,7 +98,7 @@ export default function HomeClient() {
             <Hero />
 
             {/* Services Section */}
-            <section id="Service" className="py-20 bg-gray-50">
+            <section id="Service" className="py-10 lg:py-20 bg-gray-50">
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="text-center mb-16">
                         <span className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
@@ -147,7 +147,7 @@ export default function HomeClient() {
             </section>
 
             {/* About Section */}
-            <section id="About" className="py-20 bg-white">
+            <section id="About" className="py-10 lg:py-20 bg-white">
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <div className="lg:w-1/2">
@@ -185,7 +185,7 @@ export default function HomeClient() {
             </section>
 
             {/* Testimonial Section */}
-            <section id="Testimonial" className="py-20 bg-blue-50">
+            <section id="Testimonial" className="py-10 lg:py-20 bg-blue-50">
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="text-center mb-16">
                         <span className="bg-yellow-100 text-yellow-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">

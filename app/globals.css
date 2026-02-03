@@ -100,3 +100,8 @@ body {
 .animate-spin-slow {
   animation: spin-slow 20s linear infinite;
 }
+
+.back {
+  background: linear-gradient(0deg, #000, #f0f9fc 0%, rgba(240, 249, 252, 0));
+
+}

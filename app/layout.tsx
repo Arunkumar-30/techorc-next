@@ -86,7 +86,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="min-h-screen">
-          <div className="max-w-[2000px] mx-auto overflow-hidden">
+          <div className="max-w-[2000px] mx-auto">
             {children}
           </div>
         </main>

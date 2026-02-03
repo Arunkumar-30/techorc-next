@@ -3,14 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="pt-24 pb-12 md:pt-36 md:pb-20 lg:pt-36 lg:pb-24 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
-            {/* Enhanced Background Decor Elements - Adjusted for mobile visibility */}
-            <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gradient-to-br from-cyan-200/40 to-blue-200/40 rounded-full blur-[80px] md:blur-[120px] -translate-y-1/3 translate-x-1/4"></div>
-            <div className="absolute bottom-0 left-0 w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-gradient-to-tr from-purple-200/30 to-pink-200/30 rounded-full blur-[60px] md:blur-[100px] translate-y-1/4 -translate-x-1/4"></div>
-            <div className="absolute top-1/2 left-1/2 w-[200px] md:w-[300px] h-[200px] md:h-[300px] bg-gradient-to-r from-blue-100/20 to-cyan-100/20 rounded-full blur-[50px] md:blur-[80px] -translate-x-1/2 -translate-y-1/2"></div>
+        <section className="pt-24 pb-12 md:pt-36 md:pb-20 lg:pt-36 lg:pb-24 back relative overflow-hidden">
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12 xl:gap-20">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-0 lg:gap-12 xl:gap-20">
 
                     <div className="lg:w-1/2 xl:w-[55%] z-10 text-center lg:text-left">
                         {/* Badge */}
@@ -104,26 +100,27 @@ export default function Hero() {
                     </div>
 
                 </div>
+
                 {/* Partner Logos - Enhanced for Visibility */}
-                <div className="border-t border-gray-200/80 pt-2 sm:pt-4 w-full mt-6 md:mt-12">
+                <div className="border-t border-gray-200/80 pt-2 sm:pt-4 w-full mt-8 md:mt-10">
                     <p className="text-xs sm:text-sm font-semibold text-gray-400 mb-4 sm:mb-6 uppercase tracking-widest text-center lg:text-left">Trusted Technology Partners</p>
-                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 md:gap-10">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 w-full gap-4 sm:gap-6">
                         {[
-                            { src: "/images/amazon.svg", alt: "Amazon", h: "h-8 sm:h-9 md:h-10" },
-                            { src: "/images/azure.svg", alt: "Azure", h: "h-8 sm:h-9 md:h-10" },
-                            { src: "/images/wowza.svg", alt: "Wowza", h: "h-7 sm:h-8 md:h-9" },
-                            { src: "/images/aws.svg", alt: "AWS", h: "h-8 sm:h-9 md:h-10" },
+                            { src: "/images/amazon.svg", alt: "Amazon web services", },
+                            { src: "/images/azure.svg", alt: "Azure", },
+                            { src: "/images/wowza.svg", alt: "Wowza media systems", },
+                            { src: "/images/aws.svg", alt: "AWS", },
                         ].map((logo, index) => (
                             <div
                                 key={index}
-                                className={`${logo.h} w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-110`}
+                                className="w-full h-[60px] md:h-[80px] bg-white rounded-xl border border-gray-100 flex items-center justify-center hover:shadow-md hover:border-blue-100 group transition-all duration-300"
                             >
                                 <Image
                                     src={logo.src}
-                                    height={40}
+                                    height={100}
                                     width={120}
                                     alt={logo.alt}
-                                    className="h-full w-auto object-contain"
+                                    className="object-fill max-h-12 md:max-h-16 w-auto"
                                 />
                             </div>
                         ))}

@@ -16,7 +16,7 @@ export default function Footer() {
                                 width={140}
                                 height={40}
                                 alt="Techorc"
-                                className="w-[140px]  invert"
+                                className="w-[140px] invert"
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">

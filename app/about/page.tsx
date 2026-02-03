@@ -62,25 +62,25 @@ export default function AboutPage() {
             title: "Agile Approach",
             description: "Keeping customers at the centre of the service delivery is in our traits. Our quick turnaround time and proactive approach assist our clients to rehearse the future and outperform the competition.",
             icon: "/images/quick-easy.svg",
-            color: "bg-green-100"
+            color: "bg-green-500"
         },
         {
             title: "Smart Solutions",
             description: "Our machine first approach empowers you to bypass the repetitive manual tasks. Greater levels of automation through Artificial Intelligence, Cognitive capabilities and data analytics bring efficiency.",
             icon: "/images/smart-solutions.svg",
-            color: "bg-pink-100"
+            color: "bg-pink-500"
         },
         {
             title: "Scalability",
             description: "When we solve business challenges, we envision solutions that can be scaled. Our dynamic resourcing calibration can replicate any solution for a much larger playing ground.",
             icon: "/images/scalability.svg",
-            color: "bg-yellow-100"
+            color: "bg-yellow-500"
         },
         {
             title: "Cost-effective",
             description: "Our flexible, reliable and efficient service delivery sets us apart from the rest and helps our clients perform to the best of their capacities in this competitive market environment.",
             icon: "/images/cost-effective.svg",
-            color: "bg-blue-100"
+            color: "bg-blue-500"
         }
     ];
 
