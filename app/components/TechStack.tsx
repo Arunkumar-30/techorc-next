@@ -21,7 +21,7 @@ const row2 = [...techStack.reverse(), ...techStack];
 
 export default function TechStack() {
     return (
-        <section className="py-20 bg-white border-y border-gray-100 overflow-hidden">
+        <section className="py-10 md:py-20 bg-white border-y border-gray-100 overflow-hidden">
             <div className="container mx-auto px-4 mb-12 text-center">
                 <h3 className="text-gray-400 font-bold uppercase tracking-[0.2em] mb-4">Powered By Modern Tech Stack</h3>
                 <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
@@ -38,7 +38,7 @@ export default function TechStack() {
                                     alt={tech.name}
                                     width={120}
                                     height={50}
-                                    className="object-contain w-auto h-12 opacity-60 group-hover:opacity-100 transition-opacity"
+                                    className="object-contain w-auto h-12 opacity-90 md:opacity-60 group-hover:opacity-100 transition-opacity"
                                     onError={(e) => {
                                         e.currentTarget.style.display = 'none';
                                     }}
@@ -53,7 +53,7 @@ export default function TechStack() {
                                     alt={tech.name}
                                     width={120}
                                     height={50}
-                                    className="object-contain w-auto h-12 opacity-60 group-hover:opacity-100 transition-opacity"
+                                    className="object-contain w-auto h-12 opacity-90 md:opacity-60 group-hover:opacity-100 transition-opacity"
                                 />
                             </div>
                         ))}

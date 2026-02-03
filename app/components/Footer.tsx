@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer className="bg-gray-900 border-t border-gray-800 text-gray-400">
-            <div className="container mx-auto px-4 pt-16 pb-12">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+            <div className="container mx-auto px-4 pt-10 pb-8 md:pt-16 md:pb-12">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 lg:gap-8 mb-16">
                     {/* Brand Section */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 col-span-2 sm:col-span-1">
                         <Link href="/" aria-label="Techorc home" className="inline-block">
                             {/* Note: In a real scenario, you'd want a white/light logo for dark footer. 
                                  Using brightness filter as a quick fix if logo is dark. */}
@@ -93,7 +93,7 @@ export default function Footer() {
                     </div>
 
                     {/* Newsletter / Contact Info */}
-                    <div>
+                    <div className="col-span-2 sm:col-span-1">
                         <h4 className="font-bold text-white text-lg mb-6 relative inline-block">
                             Get in Touch
                             <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-500 rounded-full"></span>
@@ -104,9 +104,7 @@ export default function Footer() {
                                     <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                 </div>
                                 <span> NO:1/264 T, Pollachi Main Rd,
-
                                     Raj Vijay Nagar, Coimbatore,
-
                                     Tamil Nadu, 641021, India</span>
                             </li>
                             <li className="flex items-center gap-3">

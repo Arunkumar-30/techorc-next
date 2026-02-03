@@ -61,7 +61,7 @@ export default function AboutPage() {
         {
             title: "Agile Approach",
             description: "Keeping customers at the centre of the service delivery is in our traits. Our quick turnaround time and proactive approach assist our clients to rehearse the future and outperform the competition.",
-            icon: "/images/quick-&-easy.svg",
+            icon: "/images/quick-easy.svg",
             color: "bg-green-100"
         },
         {
