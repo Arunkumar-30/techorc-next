@@ -60,17 +60,36 @@ export default function Header() {
                                 Our Services
                                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180 text-[#00a8f2]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
-                            <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-80 bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-3 z-50">
-                                <div className="grid gap-1">
-                                    {Object.entries(servicesData).map(([key, data]) => (
-                                        <Link
-                                            key={key}
-                                            href={`/${key}`}
-                                            className="block px-4 py-3 text-sm font-medium text-gray-600 hover:bg-blue-50 hover:text-[#00a8f2] rounded-lg transition-colors"
-                                        >
-                                            {data.heroTitle}
-                                        </Link>
-                                    ))}
+                            <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-[800px] bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-6 z-50">
+                                <div className="flex">
+                                    {/* Column 1 */}
+                                    <div className="w-1/2 pr-6 border-r border-gray-100">
+                                        <div className="grid gap-2">
+                                            {Object.entries(servicesData).slice(0, 7).map(([key, data]) => (
+                                                <Link
+                                                    key={key}
+                                                    href={`/${key}`}
+                                                    className="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-[#00a8f2] rounded-lg transition-colors truncate hover:bg-gray-50"
+                                                >
+                                                    {data.heroTitle}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    {/* Column 2 */}
+                                    <div className="w-1/2 pl-6 flex flex-col justify-between">
+                                        <div className="grid gap-2">
+                                            {Object.entries(servicesData).slice(7).map(([key, data]) => (
+                                                <Link
+                                                    key={key}
+                                                    href={`/${key}`}
+                                                    className="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-[#00a8f2] rounded-lg transition-colors truncate hover:bg-gray-50"
+                                                >
+                                                    {data.heroTitle}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,17 +145,19 @@ export default function Header() {
                                 Our Services
                                 <svg className={`w-5 h-5 text-[#00a8f2] transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
-                            <div className={`mt-3 space-y-1 pl-4 border-l-2 border-[#00a8f2]/20 transition-all duration-300 ${isServicesOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                                {Object.entries(servicesData).map(([key, data]) => (
-                                    <Link
-                                        key={key}
-                                        href={`/${key}`}
-                                        onClick={() => setIsOpen(false)}
-                                        className="block py-2 text-[15px] font-medium text-gray-600 hover:text-[#00a8f2]"
-                                    >
-                                        {data.heroTitle}
-                                    </Link>
-                                ))}
+                            <div className={`mt-3 pl-2 border-l-2 border-[#00a8f2]/20 transition-all duration-300 ${isServicesOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                    {Object.entries(servicesData).map(([key, data]) => (
+                                        <Link
+                                            key={key}
+                                            href={`/${key}`}
+                                            onClick={() => setIsOpen(false)}
+                                            className="block py-2 px-2 text-[14px] font-medium text-gray-600 hover:text-[#00a8f2] hover:bg-blue-50 rounded-md transition-colors truncate"
+                                        >
+                                            {data.heroTitle}
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 

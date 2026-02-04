@@ -30,7 +30,9 @@ export default function Hero() {
 
                         {/* Subheading - Responsive */}
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                            We empower businesses to seize new opportunities with custom consulting, development, and support services tailored to your goals.
+                            We empower businesses to seize new opportunities through custom software consulting, scalable web and mobile development, and reliable IT support tailored to your business goals.
+
+
                         </p>
 
                         {/* CTA Buttons - Responsive */}

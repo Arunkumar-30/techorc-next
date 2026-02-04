@@ -90,7 +90,21 @@ export default function HomeClient() {
             name: "Yari Restaurant",
             role: "Billing System",
             image: "/images/client-yari.png"
+        },
+        {
+            quote: "Working with the team was a smooth and collaborative experience. The Surya GPS app was built with precision, performance, and usability in mind, and we are extremely satisfied with the final outcome.",
+            name: "Surya Telematics",
+            role: "GPS Tracking Application",
+            image: "/images/client-surya-gps.svg"
+        },
+        {
+            quote: "Rayzen Power delivered a seamless solar solution for our home, from consultation to installation. Their smart solar systems helped us reduce electricity costs while ensuring reliable and sustainable energy.",
+            name: "Rayzen Power",
+            role: "Solar Energy Solutions",
+            image: "/images/rayzen_power.png"
         }
+
+
     ];
 
     return (
@@ -129,8 +143,8 @@ export default function HomeClient() {
                             className="pb-16"
                         >
                             {services.map((service, index) => (
-                                <SwiperSlide key={index} className="h-auto">
-                                    <div className="h-full py-4">
+                                <SwiperSlide key={index} className="!h-auto !flex">
+                                    <div className="h-full w-full py-4">
                                         <ServiceCard
                                             title={service.title}
                                             description={service.description}

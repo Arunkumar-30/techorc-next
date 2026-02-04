@@ -11,7 +11,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, link, imageSrc, color }: ServiceCardProps) {
     return (
-        <div className="group bg-white rounded-2xl p-6 md:p-8 h-full border border-gray-100 hover:border-transparent hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 relative overflow-hidden">
+        <div className="group bg-white rounded-2xl p-6 md:p-8 h-full border border-gray-100 hover:border-transparent hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 relative overflow-hidden flex flex-col">
             {/* Top Border Accent */}
             <div className="absolute top-0 left-0 w-full h-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" style={{ backgroundColor: color }}></div>
 

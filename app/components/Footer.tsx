@@ -12,11 +12,11 @@ export default function Footer() {
                             {/* Note: In a real scenario, you'd want a white/light logo for dark footer. 
                                  Using brightness filter as a quick fix if logo is dark. */}
                             <Image
-                                src="/images/logo.svg"
+                                src="/images/techorc_footer.png"
                                 width={140}
-                                height={40}
+                                height={48}
                                 alt="Techorc"
-                                className="w-[140px] invert"
+                                className="w-[160px] "
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
@@ -26,8 +26,8 @@ export default function Footer() {
                             {[
                                 { name: 'linkedin', icon: '/images/linkedin.svg', url: 'https://www.linkedin.com/company/techorc' },
                                 { name: 'twitter', icon: '/images/twitter.svg', url: 'https://twitter.com/techorc' },
-                                { name: 'facebook', icon: '/images/facebook.svg', url: 'https://www.facebook.com/techorc' },
-                                { name: 'instagram', icon: '/images/instagram.svg', url: 'https://www.instagram.com/techorc' }
+                                { name: 'facebook', icon: '/images/facebook.svg', url: 'https://www.facebook.com/Techorc' },
+                                { name: 'instagram', icon: '/images/instagram.svg', url: 'https://www.instagram.com/tech_orc?utm_source=qr&igsh=OWJncWZramd5cjlk' }
                             ].map((social) => (
                                 <Link
                                     href={social.url}
