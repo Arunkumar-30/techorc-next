@@ -106,10 +106,10 @@ export default function Hero() {
                     <p className="text-xs sm:text-sm font-semibold text-gray-400 mb-4 sm:mb-6 uppercase tracking-widest text-center lg:text-left">Trusted Technology Partners</p>
                     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 w-full gap-4 sm:gap-6">
                         {[
-                            { src: "/images/amazon.svg", alt: "Amazon web services", },
-                            { src: "/images/azure.svg", alt: "Azure", },
-                            { src: "/images/wowza.svg", alt: "Wowza media systems", },
-                            { src: "/images/aws.svg", alt: "AWS", },
+                            { src: "/images/amazon.png", alt: "Amazon web services", },
+                            { src: "/images/azure.png", alt: "Azure", },
+                            { src: "/images/wowza.png", alt: "Wowza media systems", },
+                            { src: "/images/aws.png", alt: "AWS", },
                         ].map((logo, index) => (
                             <div
                                 key={index}
