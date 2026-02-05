@@ -29,7 +29,7 @@ export default function ServiceCard({ title, description, link, imageSrc, color 
                     </Link>
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed text-sm flex-grow line-clamp-3">
+                <p className="text-gray-600 leading-relaxed text-sm flex-grow">
                     {description}
                 </p>
 
