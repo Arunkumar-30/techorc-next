@@ -6,6 +6,7 @@ import TestimonialCard from "./components/TestimonialCard";
 import TechStack from "./components/TechStack";
 import Link from "next/link";
 import Image from "next/image";
+import { servicesData } from "./data/services";
 
 // Swiper Imports
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,50 +16,14 @@ import 'swiper/css/pagination';
 import { motion } from "framer-motion";
 
 export default function HomeClient() {
-    const services = [
-        {
-            title: "Custom Software Development",
-            description: "We design and develop custom software solutions tailored to solve complex business challenges and drive scalable growth.",
-            link: "/custom-software-development",
-            imageSrc: "/images/custom.svg",
-            color: "#9d12bb"
-        },
-        {
-            title: "Web Application Development",
-            description: "We build secure, scalable, and high-performance web applications using modern technologies to support enterprise workflows.",
-            link: "/web-application-development",
-            imageSrc: "/images/web-application.svg",
-            color: "#0cf2f2"
-        },
-        {
-            title: "Mobile App Development",
-            description: "We develop high-quality Android and iOS mobile applications tailored for startups and enterprises.",
-            link: "/mobile-app-development",
-            imageSrc: "/images/mobile-application.svg",
-            color: "#ff3678"
-        },
-        {
-            title: "Cloud Integration Services",
-            description: "We help businesses migrate, integrate, and optimize applications using secure cloud infrastructure solutions.",
-            link: "/cloud-integration-services",
-            imageSrc: "/images/cloud.svg",
-            color: "#00a8f2"
-        },
-        {
-            title: "AI, ML & Data Solutions",
-            description: "Automate business operations using AI, machine learning, and data-driven software solutions.",
-            link: "/ai-ml-development",
-            imageSrc: "/images/ai.svg",
-            color: "#12bb69"
-        },
-        {
-            title: "IT Consulting Services",
-            description: "Our IT consulting services help businesses choose the right technologies for long-term digital growth.",
-            link: "/it-consulting-services",
-            imageSrc: "/images/it.svg",
-            color: "#f2890c"
-        }
-    ];
+    // Convert servicesData object to array for rendering all 14 services
+    const services = Object.entries(servicesData).map(([slug, service]) => ({
+        title: service.heroTitle,
+        description: service.shortDescription,
+        link: `/${slug}`,
+        imageSrc: service.imageSrc,
+        color: service.color
+    }));
 
     const testimonials = [
         {
@@ -67,12 +32,12 @@ export default function HomeClient() {
             role: "Streaming Solution",
             image: "/images/client-sst.svg"
         },
-        {
-            quote: "Not only they clearly understood my exact technical requirements but even suggested better ways in doing them.",
-            name: "Balle Balle Restaurant",
-            role: "Order Booking Portal",
-            image: "/images/client-balle-balle.png"
-        },
+        // {
+        //     quote: "Not only they clearly understood my exact technical requirements but even suggested better ways in doing them.",
+        //     name: "Balle Balle Restaurant",
+        //     role: "Order Booking Portal",
+        //     image: "/images/client-balle-balle.png"
+        // },
         {
             quote: "Working with them felt like a collaboration resulting in the creation of a platform we are more than satisfied with.",
             name: "Surya GPS Tracking",
@@ -85,12 +50,12 @@ export default function HomeClient() {
             role: "Tracking Solution",
             image: "/images/client-ducont.png"
         },
-        {
-            quote: "Techorc came out way ahead of the others in terms of quality and speed. We are extremely happy.",
-            name: "Yari Restaurant",
-            role: "Billing System",
-            image: "/images/client-yari.png"
-        },
+        // {
+        //     quote: "Techorc came out way ahead of the others in terms of quality and speed. We are extremely happy.",
+        //     name: "Yari Restaurant",
+        //     role: "Billing System",
+        //     image: "/images/client-yari.png"
+        // },
         {
             quote: "Working with the team was a smooth and collaborative experience. The Surya GPS app was built with precision, performance, and usability in mind, and we are extremely satisfied with the final outcome.",
             name: "Surya Telematics",

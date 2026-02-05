@@ -29,11 +29,11 @@ export default function ServiceCard({ title, description, link, imageSrc, color 
                     </Link>
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed text-sm flex-grow">
+                <p className="text-gray-600 leading-relaxed text-sm flex-grow line-clamp-3">
                     {description}
                 </p>
 
-                <div className="mt-8 pt-6 border-t border-gray-50 flex items-center justify-between">
+                <div className="mt-4 pt-2 border-t border-gray-50 flex items-center justify-between">
                     <span className="text-xs font-bold text-gray-400 uppercase tracking-widest group-hover:text-blue-500 transition-colors">Learn More</span>
                     <Link
                         href={link}

@@ -69,7 +69,7 @@ export default async function ServicePage({ params }: Props) {
 
     return (
         <>
-            {/* Hero Section */}
+
             {/* Hero Section */}
             <section className="bg-gray-900 text-white pt-32 pb-16 md:pt-40 md:pb-20">
                 <div className="container mx-auto px-4 lg:px-8 text-center max-w-4xl">

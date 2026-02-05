@@ -7,6 +7,9 @@ export interface Service {
     mainTitle: string;
     mainDescription: string;
     features: { title: string; description: string }[];
+    imageSrc: string;
+    color: string;
+    shortDescription: string;
 }
 
 export const servicesData: Record<string, Service> = {
@@ -23,7 +26,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Scalable Architecture", description: "Building systems that grow with your business and handle high traffic efficiently." },
             { title: "API & Third-Party Integrations", description: "Seamless integration with existing systems, services, and third-party APIs." },
             { title: "Cloud-Ready Solutions", description: "Deploy web applications on the cloud for better performance, security, and reliability." }
-        ]
+        ],
+        imageSrc: "/images/web-application.svg",
+        color: "#0cf2f2",
+        shortDescription: "We build secure, scalable, and high-performance web applications using modern technologies to support enterprise workflows."
     },
 
     "custom-software-development": {
@@ -39,7 +45,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Legacy Modernization", description: "Upgrading outdated systems with modern technologies." },
             { title: "Enterprise Software", description: "Large-scale software systems for enterprise operations." },
             { title: "SaaS Development", description: "Scalable SaaS products for startups and enterprises." }
-        ]
+        ],
+        imageSrc: "/images/custom.svg",
+        color: "#9d12bb",
+        shortDescription: "We design and develop custom software solutions tailored to solve complex business challenges and drive scalable growth."
     },
 
     "mobile-app-development": {
@@ -55,7 +64,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Android Development", description: "Robust Android applications." },
             { title: "Cross-Platform Apps", description: "React Native & Flutter solutions." },
             { title: "UI/UX Design", description: "User-centric design for better engagement." }
-        ]
+        ],
+        imageSrc: "/images/mobile-application.svg",
+        color: "#ff3678",
+        shortDescription: "We develop high-quality Android and iOS mobile applications tailored for startups and enterprises."
     },
 
     "web-streaming-solutions": {
@@ -71,7 +83,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Video on Demand", description: "Scalable VOD platforms." },
             { title: "Streaming Security", description: "DRM and encrypted content delivery." },
             { title: "Playback Optimization", description: "Smooth streaming across devices." }
-        ]
+        ],
+        imageSrc: "/images/streaming.svg",
+        color: "#ff6b35",
+        shortDescription: "High-performance live and on-demand video streaming solutions for modern platforms."
     },
 
     "digital-transformation-services": {
@@ -87,7 +102,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Legacy Modernization", description: "Upgrading legacy systems." },
             { title: "Cloud Adoption", description: "Migrating to cloud platforms." },
             { title: "Digital Strategy", description: "Technology-driven business growth." }
-        ]
+        ],
+        imageSrc: "/images/digital.svg",
+        color: "#4ecdc4",
+        shortDescription: "Modernizing business processes using digital technologies and automation."
     },
 
     "technical-consulting-services": {
@@ -103,7 +121,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Technology Selection", description: "Choosing the right tech stack." },
             { title: "Code Audits", description: "Quality and security reviews." },
             { title: "Scalability Planning", description: "Preparing systems for growth." }
-        ]
+        ],
+        imageSrc: "/images/technical.svg",
+        color: "#49c0aaff",
+        shortDescription: "Expert guidance for technology decisions and scalable system architecture."
     },
 
     "business-analysis-services": {
@@ -119,7 +140,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Process Mapping", description: "Workflow optimization." },
             { title: "Gap Analysis", description: "Identifying improvement areas." },
             { title: "Documentation", description: "Clear functional documentation." }
-        ]
+        ],
+        imageSrc: "/images/analysis.svg",
+        color: "#b84444ff",
+        shortDescription: "Turning business ideas into technical solutions through strategic analysis."
     },
 
     "infrastructure-management-services": {
@@ -135,7 +159,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Network Monitoring", description: "Secure connectivity." },
             { title: "Cloud Infrastructure", description: "Scalable cloud management." },
             { title: "Security Management", description: "Infrastructure protection." }
-        ]
+        ],
+        imageSrc: "/images/infra.svg",
+        color: "#6848b3ff",
+        shortDescription: "Secure and stable IT infrastructure solutions with high availability."
     },
 
     "database-services": {
@@ -151,7 +178,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Data Migration", description: "Secure data transfer." },
             { title: "Performance Tuning", description: "Query optimization." },
             { title: "Backup & Recovery", description: "Data safety solutions." }
-        ]
+        ],
+        imageSrc: "/images/database.svg",
+        color: "#b94077ff",
+        shortDescription: "Optimized and secure database solutions with high-performance management."
     },
 
     "networking-services": {
@@ -167,7 +197,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Network Security", description: "Threat protection." },
             { title: "Monitoring", description: "Performance tracking." },
             { title: "Maintenance", description: "Ongoing support." }
-        ]
+        ],
+        imageSrc: "/images/networking.svg",
+        color: "#41bd8fff",
+        shortDescription: "Secure and scalable enterprise networking solutions with threat protection."
     },
 
     "ecommerce-solutions": {
@@ -183,7 +216,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Payment Integration", description: "Secure checkout systems." },
             { title: "Inventory Management", description: "Product & order control." },
             { title: "Scalability", description: "Growth-ready architecture." }
-        ]
+        ],
+        imageSrc: "/images/ecommerce.svg",
+        color: "#b66d3dff",
+        shortDescription: "Scalable online stores with secure payment integration and inventory management."
     },
     "cloud-integration-services": {
         title: "Cloud Integration Services Company in India | Techorc",
@@ -198,8 +234,12 @@ export const servicesData: Record<string, Service> = {
             { title: "Cloud Native Development", description: "Applications built specifically for cloud platforms." },
             { title: "DevOps Automation", description: "CI/CD pipelines for faster and reliable deployments." },
             { title: "Cloud Security", description: "Securing cloud infrastructure and applications." }
-        ]
-    }, "ai-ml-development": {
+        ],
+        imageSrc: "/images/cloud.svg",
+        color: "#00a8f2",
+        shortDescription: "We help businesses migrate, integrate, and optimize applications using secure cloud infrastructure solutions."
+    },
+    "ai-ml-development": {
         title: "AI & ML Development Company in India | Techorc",
         description: "Techorc delivers AI, machine learning, and data-driven solutions to automate and optimize business operations.",
         keywords: ["AI ML Development India", "Machine Learning Services", "Predictive Analytics", "Data Engineering"],
@@ -212,7 +252,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Machine Learning Models", description: "Custom ML models tailored to business needs." },
             { title: "Natural Language Processing", description: "Chatbots and text analysis solutions." },
             { title: "Data Engineering", description: "Scalable data pipelines and analytics systems." }
-        ]
+        ],
+        imageSrc: "/images/ai.svg",
+        color: "#12bb69",
+        shortDescription: "Automate business operations using AI, machine learning, and data-driven software solutions."
     },
     "it-consulting-services": {
         title: "IT Consulting Services Company in India | Techorc",
@@ -227,7 +270,10 @@ export const servicesData: Record<string, Service> = {
             { title: "Software Architecture", description: "Designing scalable and secure systems." },
             { title: "Digital Transformation", description: "Modernizing IT processes and platforms." },
             { title: "Security Consulting", description: "Improving IT security and compliance." }
-        ]
+        ],
+        imageSrc: "/images/it.svg",
+        color: "#f2890c",
+        shortDescription: "Our IT consulting services help businesses choose the right technologies for long-term digital growth."
     }
 
 
