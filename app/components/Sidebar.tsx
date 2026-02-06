@@ -15,7 +15,7 @@ export default function Sidebar({ activeSlug }: SidebarProps) {
                     return (
                         <Link
                             key={key}
-                            href={`/${key}`}
+                            href={`/services/${key}`}
                             className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all flex-shrink-0 ${isActive
                                 ? "bg-[#00a8f2] text-white shadow-md cursor-default"
                                 : "text-gray-600 hover:bg-white hover:shadow-sm hover:text-[#00a8f2]"

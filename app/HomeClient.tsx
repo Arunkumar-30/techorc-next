@@ -20,7 +20,7 @@ export default function HomeClient() {
     const services = Object.entries(servicesData).map(([slug, service]) => ({
         title: service.heroTitle,
         description: service.shortDescription,
-        link: `/${slug}`,
+        link: `/services/${slug}`,
         imageSrc: service.imageSrc,
         color: service.color
     }));

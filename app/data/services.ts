@@ -14,46 +14,24 @@ export interface Service {
     shortDescription: string;
 }
 const defaultServiceAreas = [
-    "Bangalore",
-    "Chennai",
-    "Hyderabad",
-    "Mumbai",
-    "Delhi NCR",
-    "Pune",
-    "Kolkata",
-    "Ahmedabad",
+    "Coimbatore (Head Office)",
+    "Bangalore – Remote Services",
+    "Chennai – Remote Services",
+    "Hyderabad – Remote Services",
+    "Mumbai – Remote Services",
+    "Delhi NCR – Remote Services",
+    "Pune – Remote Services",
     "Serving clients across India",
     "Serving global clients"
 ];
-const generateFAQs = (serviceName: string) => [
-    {
-        question: `What ${serviceName} solutions does Techorc offer?`,
-        answer: `Techorc provides comprehensive ${serviceName.toLowerCase()} solutions tailored to your specific business requirements. We focus on delivering scalable, secure, and high-performance systems that drive digital transformation and operational efficiency.`
-    },
-    {
-        question: `Is your ${serviceName} suitable for startups and enterprises?`,
-        answer: `Yes, our ${serviceName.toLowerCase()} services are highly adaptable. We build customized solutions that support the rapid growth of startups while ensuring the robust compliance, security, and scalability needed by large enterprises.`
-    },
-    {
-        question: `Does Techorc serve clients for ${serviceName} outside India?`,
-        answer: `Absolutely. While we have a strong presence in India (Bangalore, Mumbai, etc.), we serve global clients with remote-first teams, delivering world-class ${serviceName.toLowerCase()} adhering to international standards.`
-    },
-    {
-        question: `How do you ensure quality in ${serviceName}?`,
-        answer: `We follow rigorous quality assurance protocols, secure coding standards, and agile methodologies. Our expert team conducts continuous testing and code audits to ensure your ${serviceName.toLowerCase()} project is reliable and secure.`
-    },
-    {
-        question: `How can I get started with Techorc's ${serviceName}?`,
-        answer: `Simply contact our team to discuss your project goals. We will conduct an initial analysis and provide a tailored roadmap for your ${serviceName.toLowerCase()} success.`
-    }
-];
+
 
 
 export const servicesData: Record<string, Service> = {
     "web-application-development": {
         title: "Web Application Development Company in India | Techorc",
         description:
-            "Techorc provides professional web application development services in India, helping businesses build secure, scalable, and high-performance digital platforms. Our customized solutions support long-term business growth, ensuring seamless user experiences and enterprise-grade reliability for startups and diverse organizations across Bangalore, Mumbai, and Hyderabad.",
+            "Techorc provides professional web application development services in India. Based in Coimbatore, Tamil Nadu, we build secure, scalable, and high-performance web applications for startups and enterprises. Our remote-first development approach enables us to serve clients across India while delivering reliable, user-focused, and future-ready digital platforms.",
         keywords: [
             "Web App Development India",
             "Custom Web Development",
@@ -91,40 +69,38 @@ export const servicesData: Record<string, Service> = {
         ],
         faqs: [
             {
-                question: "What type of web applications does Techorc develop?",
+                question: "What types of web applications does Techorc develop?",
                 answer:
-                    "We develop enterprise web applications, SaaS platforms, customer portals, internal business tools, and custom web solutions tailored to specific business needs."
+                    "Techorc develops a wide range of web applications including custom business applications, SaaS platforms, enterprise portals, dashboards, CRM systems, and scalable web platforms tailored to specific business needs."
             },
             {
-                question: "Are your web applications scalable?",
+                question: "Which technologies do you use for web application development?",
                 answer:
-                    "Yes, our applications are built using scalable architecture to support future growth and handle high user traffic efficiently."
+                    "We use modern web technologies such as React, Next.js, Node.js, Express, REST APIs, cloud platforms, and secure databases to build fast, scalable, and future-ready web applications."
             },
             {
-                question: "Do you build cloud-ready web applications?",
+                question: "Are your web applications scalable and secure?",
                 answer:
-                    "Absolutely. We design cloud-ready web applications that can be deployed on platforms like AWS, Azure, and Google Cloud."
+                    "Yes, all our web applications are built with scalable architecture and enterprise-grade security practices, including secure authentication, data protection, and cloud-ready deployments."
             },
             {
-                question: "Can you integrate third-party services?",
+                question: "Do you build web applications for startups and enterprises?",
                 answer:
-                    "Yes, we integrate third-party APIs, payment systems, CRMs, analytics tools, and other business platforms."
+                    "Absolutely. We build flexible web applications for startups looking to scale quickly and robust enterprise-grade platforms for large organizations requiring high performance and reliability."
             },
             {
-                question: "Is security included in your development process?",
+                question: "Do you provide ongoing support and maintenance after development?",
                 answer:
-                    "Security is a priority in our development process, and we follow best practices to protect applications and data."
+                    "Yes, Techorc offers continuous support, performance optimization, security updates, and feature enhancements to ensure your web application runs smoothly after launch."
+            },
+            {
+                question: "How long does it take to develop a web application?",
+                answer:
+                    "The development timeline depends on project complexity, features, and integrations. Typically, a web application can take anywhere from a few weeks to a few months after requirement analysis."
             }
-        ],
-        serviceAreas: [
-            "Bangalore",
-            "Chennai",
-            "Hyderabad",
-            "Mumbai",
-            "Delhi NCR",
-            "Pune",
-            "Serving clients across India and globally"
-        ],
+        ]
+        ,
+        serviceAreas: defaultServiceAreas,
         imageSrc: "/images/web-application.svg",
         color: "#0cf2f2",
         shortDescription:
@@ -134,7 +110,7 @@ export const servicesData: Record<string, Service> = {
 
     "custom-software-development": {
         title: "Custom Software Development Company in India | Techorc",
-        description: "Techorc is a premier custom software development company in India offering bespoke software solutions specifically tailored to solve your most complex business challenges. We serve clients in Bangalore, Chennai, and Delhi NCR with innovative, scalable, and secure software designed to drive operational excellence.",
+        description: "Techorc offers custom software development services in India, building reliable and scalable software solutions for diverse industries. From our base in Coimbatore, Tamil Nadu, we serve clients across India with secure, business-focused, and future-ready applications.",
         keywords: ["Custom Software Development India", "Bespoke Software Solutions", "Software Modernization", "Enterprise Software Development", "SaaS Development India"],
         heroTitle: "Custom Software Development Services",
         heroDescription: "We design and develop custom software solutions tailored to solve complex business challenges and drive scalable digital growth.",
@@ -146,7 +122,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Enterprise Software", description: "Large-scale software systems for enterprise operations." },
             { title: "SaaS Development", description: "Scalable SaaS products for startups and enterprises." }
         ],
-        faqs: generateFAQs("Custom Software Development"),
+        faqs: [
+            {
+                question: "What is custom software development?",
+                answer:
+                    "Custom software development involves building software solutions specifically designed to meet unique business requirements, workflows, and operational goals."
+            },
+            {
+                question: "What types of custom software does Techorc develop?",
+                answer:
+                    "We develop enterprise software, SaaS platforms, internal business tools, workflow automation systems, and modernized legacy applications."
+            },
+            {
+                question: "Is custom software suitable for startups?",
+                answer:
+                    "Yes, custom software is ideal for startups that require scalable, flexible solutions tailored to their business model and growth plans."
+            },
+            {
+                question: "Do you modernize existing legacy software?",
+                answer:
+                    "Absolutely. We modernize outdated systems using modern architectures, cloud platforms, and secure technologies."
+            },
+            {
+                question: "Do you provide post-development support?",
+                answer:
+                    "Yes, we offer ongoing maintenance, upgrades, performance optimization, and security updates after deployment."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/custom.svg",
@@ -156,7 +159,7 @@ export const servicesData: Record<string, Service> = {
 
     "mobile-app-development": {
         title: "Mobile App Development Company in India | Techorc",
-        description: "We are a top-tier mobile app development company in India, developing high-quality Android and iOS mobile applications tailored for startups and enterprises. Our expert team in Bangalore and Pune builds engaging, user-centric mobile experiences that drive customer retention and business growth.",
+        description: "Techorc offers custom mobile application development services in India, helping businesses launch scalable and user-friendly mobile apps. Based in Coimbatore, Tamil Nadu, we serve clients across India with secure, high-performance Android and iOS solutions built for long-term growth.",
         keywords: ["Mobile App Development India", "iOS App Development", "Android App Development", "React Native Developers", "Flutter App Development"],
         heroTitle: "Mobile App Development Services",
         heroDescription: "High-quality mobile applications for Android and iOS platforms.",
@@ -168,7 +171,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Cross-Platform Apps", description: "React Native & Flutter solutions." },
             { title: "UI/UX Design", description: "User-centric design for better engagement." }
         ],
-        faqs: generateFAQs("Mobile App Development"),
+        faqs: [
+            {
+                question: "Which platforms do you develop mobile apps for?",
+                answer:
+                    "We develop mobile applications for Android, iOS, and cross-platform frameworks such as React Native and Flutter."
+            },
+            {
+                question: "Do you build native or cross-platform apps?",
+                answer:
+                    "We build both native and cross-platform mobile apps depending on performance, scalability, and budget requirements."
+            },
+            {
+                question: "Can you handle UI/UX design for mobile apps?",
+                answer:
+                    "Yes, our team provides complete UI/UX design focused on usability, performance, and user engagement."
+            },
+            {
+                question: "Are your mobile apps secure and scalable?",
+                answer:
+                    "All our mobile applications follow secure coding practices and are built to scale with growing user bases."
+            },
+            {
+                question: "Do you provide app maintenance after launch?",
+                answer:
+                    "Yes, we offer ongoing app support, performance monitoring, updates, and feature enhancements."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/mobile-application.svg",
@@ -178,7 +208,7 @@ export const servicesData: Record<string, Service> = {
 
     "web-streaming-solutions": {
         title: "Web Streaming Solutions Company in India | Techorc",
-        description: "Techorc delivers scalable web streaming solutions in India for high-traffic live and on-demand platforms. We specialize in building secure OTT platforms and video streaming architectures in Bangalore, Chennai, and Mumbai, ensuring seamless playback experiences for global audiences.",
+        description: "Techorc delivers scalable web streaming solutions in India for high-traffic live and on-demand platforms. We specialize in building secure OTT platforms and video streaming architectures in Coimbatore, Bangalore, Chennai, and Mumbai, ensuring seamless playback experiences for global audiences.",
         keywords: ["Web Streaming India", "Live Streaming Solutions", "OTT Platform Development"],
         heroTitle: "Web Streaming Solutions",
         heroDescription: "High-performance live and on-demand video streaming solutions.",
@@ -190,7 +220,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Streaming Security", description: "DRM and encrypted content delivery." },
             { title: "Playback Optimization", description: "Smooth streaming across devices." }
         ],
-        faqs: generateFAQs("Web Streaming Solutions"),
+        faqs: [
+            {
+                question: "What types of streaming solutions do you build?",
+                answer:
+                    "We build live streaming platforms, video-on-demand (VOD) systems, and OTT streaming solutions."
+            },
+            {
+                question: "Do you support high-traffic streaming platforms?",
+                answer:
+                    "Yes, our streaming solutions are designed to handle high traffic with low latency and smooth playback."
+            },
+            {
+                question: "Is DRM and content security included?",
+                answer:
+                    "Yes, we implement DRM, encryption, and secure content delivery to protect digital media."
+            },
+            {
+                question: "Do your streaming platforms support multiple devices?",
+                answer:
+                    "Our solutions support mobile, desktop, smart TVs, and multiple browsers."
+            },
+            {
+                question: "Can streaming platforms scale globally?",
+                answer:
+                    "Yes, we build cloud-based streaming architectures that scale globally."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/streaming.svg",
@@ -200,7 +257,7 @@ export const servicesData: Record<string, Service> = {
 
     "digital-transformation-services": {
         title: "Digital Transformation Services Company in India | Techorc",
-        description: "Transform your business with top-tier digital transformation services in India. We help forward-thinking companies in Mumbai and Hyderabad with end-to-end process automation, legacy system modernization, and cloud adoption to drive operational agility and sustainable growth.",
+        description: "Techorc provides digital transformation services in India, helping businesses modernize processes, systems, and customer experiences. Based in Coimbatore, Tamil Nadu, we support companies across India with technology-driven strategies that improve efficiency and accelerate growth.",
         keywords: ["Digital Transformation India", "Business Automation", "Process Digitization"],
         heroTitle: "Digital Transformation Services",
         heroDescription: "Modernizing business processes using digital technologies.",
@@ -212,7 +269,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Cloud Adoption", description: "Migrating to cloud platforms." },
             { title: "Digital Strategy", description: "Technology-driven business growth." }
         ],
-        faqs: generateFAQs("Digital Transformation"),
+        faqs: [
+            {
+                question: "What is digital transformation?",
+                answer:
+                    "Digital transformation involves using modern technologies to improve business processes, efficiency, and customer experience."
+            },
+            {
+                question: "Which industries benefit from digital transformation?",
+                answer:
+                    "Industries such as manufacturing, retail, healthcare, finance, and IT benefit significantly from digital transformation."
+            },
+            {
+                question: "Do you automate business processes?",
+                answer:
+                    "Yes, we automate workflows using cloud platforms, analytics, and intelligent systems."
+            },
+            {
+                question: "Can you modernize legacy systems?",
+                answer:
+                    "Absolutely. We upgrade legacy systems into scalable, cloud-ready digital platforms."
+            },
+            {
+                question: "Is digital transformation suitable for SMEs?",
+                answer:
+                    "Yes, digital transformation helps SMEs reduce costs and improve operational efficiency."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/digital.svg",
@@ -222,7 +306,7 @@ export const servicesData: Record<string, Service> = {
 
     "technical-consulting-services": {
         title: "Technical Consulting Services Company in India | Techorc",
-        description: "Techorc offers expert technical consulting services in India, providing deep strategic guidance for both early-stage startups and established enterprises. We specialize in designing scalable system architectures, selecting the optimal technology stack, and reducing technical debt to ensure your business remains agile and competitive in Bangalore and Chennai.",
+        description: "Techorc provides technical consulting services in India, helping businesses make informed technology decisions. Based in Coimbatore, Tamil Nadu, our experts work with clients across India to optimize architecture, performance, and digital strategy.",
         keywords: ["Technical Consulting India", "System Architecture Consulting"],
         heroTitle: "Technical Consulting Services",
         heroDescription: "Expert guidance for technology decisions.",
@@ -234,7 +318,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Code Audits", description: "Quality and security reviews." },
             { title: "Scalability Planning", description: "Preparing systems for growth." }
         ],
-        faqs: generateFAQs("Technical Consulting"),
+        faqs: [
+            {
+                question: "What does technical consulting include?",
+                answer:
+                    "Technical consulting includes architecture design, technology selection, system audits, and scalability planning."
+            },
+            {
+                question: "Do you help with technology stack selection?",
+                answer:
+                    "Yes, we help businesses choose the right technology stack aligned with their goals."
+            },
+            {
+                question: "Can you audit existing systems?",
+                answer:
+                    "We conduct detailed code, security, and infrastructure audits."
+            },
+            {
+                question: "Is technical consulting useful for startups?",
+                answer:
+                    "Yes, it helps startups avoid technical debt and scale efficiently."
+            },
+            {
+                question: "Do you provide cloud consulting?",
+                answer:
+                    "Yes, we advise on cloud architecture, optimization, and security."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/technical.svg",
@@ -244,7 +355,7 @@ export const servicesData: Record<string, Service> = {
 
     "business-analysis-services": {
         title: "Business Analysis Services Company in India | Techorc",
-        description: "Techorc provides comprehensive business analysis services in India, expertly bridging the critical gap between complex business needs and technical solutions. We work directly with stakeholders in Mumbai and Bangalore to gather detailed requirements, optimize processes, and ensure that every software project delivers maximum value and operational efficiency.",
+        description: "Techorc delivers business analysis services in India, helping organizations identify gaps, optimize workflows, and improve decision-making. Operating from Coimbatore, Tamil Nadu, we serve clients across India with data-driven insights and strategic planning support.",
         keywords: ["Business Analysis India", "Requirement Analysis"],
         heroTitle: "Business Analysis Services",
         heroDescription: "Turning business ideas into technical solutions.",
@@ -256,7 +367,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Gap Analysis", description: "Identifying improvement areas." },
             { title: "Documentation", description: "Clear functional documentation." }
         ],
-        faqs: generateFAQs("Business Analysis"),
+        faqs: [
+            {
+                question: "What is business analysis in software development?",
+                answer:
+                    "Business analysis bridges the gap between business needs and technical solutions."
+            },
+            {
+                question: "Do you gather and document requirements?",
+                answer:
+                    "Yes, we perform requirement gathering, documentation, and stakeholder analysis."
+            },
+            {
+                question: "How does business analysis reduce project risk?",
+                answer:
+                    "Clear requirements minimize rework, delays, and development risks."
+            },
+            {
+                question: "Do you create user stories and workflows?",
+                answer:
+                    "Yes, we create detailed user stories, workflows, and functional documents."
+            },
+            {
+                question: "Is business analysis useful for large projects?",
+                answer:
+                    "It is essential for large and complex projects to ensure clarity and success."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/analysis.svg",
@@ -266,7 +404,7 @@ export const servicesData: Record<string, Service> = {
 
     "infrastructure-management-services": {
         title: "Infrastructure Management Services Company in India | Techorc",
-        description: "Reliable IT infrastructure management services in India designed to ensure secure, stable, and high-performance IT operations. We provide proactive 24/7 monitoring, server maintenance, and cloud optimization for businesses in Hyderabad and Pune, allowing you to focus on your core business while we handle the technical complexities.",
+        description: "Techorc delivers infrastructure management services in India, ensuring system stability, security, and performance. Based in Coimbatore, Tamil Nadu, we serve clients across India through proactive monitoring and reliable IT support.",
         keywords: ["Infrastructure Management India", "IT Infrastructure Services"],
         heroTitle: "Infrastructure Management Services",
         heroDescription: "Secure and stable IT infrastructure solutions.",
@@ -278,7 +416,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Cloud Infrastructure", description: "Scalable cloud management." },
             { title: "Security Management", description: "Infrastructure protection." }
         ],
-        faqs: generateFAQs("Infrastructure Management"),
+        faqs: [
+            {
+                question: "What does infrastructure management include?",
+                answer:
+                    "Infrastructure management includes server, network, cloud, and security monitoring."
+            },
+            {
+                question: "Do you provide 24/7 infrastructure monitoring?",
+                answer:
+                    "Yes, we provide continuous monitoring and proactive issue resolution."
+            },
+            {
+                question: "Can you manage cloud infrastructure?",
+                answer:
+                    "We manage AWS, Azure, and other cloud platforms."
+            },
+            {
+                question: "Is disaster recovery included?",
+                answer:
+                    "Yes, we implement backup and disaster recovery solutions."
+            },
+            {
+                question: "Does this improve system uptime?",
+                answer:
+                    "Yes, our services maximize uptime and system reliability."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/infra.svg",
@@ -288,7 +453,7 @@ export const servicesData: Record<string, Service> = {
 
     "database-services": {
         title: "Database Services Company in India | Techorc",
-        description: "Expert database services in India providing secure, high-performance data management solutions for modern applications. We specialize in complex database design, seamless migration, and performance tuning for clients in Bangalore and Mumbai, ensuring your critical data infrastructure is both robust and scalable.",
+        description: "Techorc provides database design and management services in India, ensuring data security, performance, and reliability. Based in Coimbatore, Tamil Nadu, we serve clients across India with optimized and scalable database solutions.",
         keywords: ["Database Services India", "Database Management"],
         heroTitle: "Database Services",
         heroDescription: "Optimized and secure data solutions.",
@@ -300,7 +465,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Performance Tuning", description: "Query optimization." },
             { title: "Backup & Recovery", description: "Data safety solutions." }
         ],
-        faqs: generateFAQs("Web Application Development"),
+        faqs: [
+            {
+                question: "What database services does Techorc offer?",
+                answer:
+                    "We offer database design, migration, performance tuning, backup, and security services."
+            },
+            {
+                question: "Do you support SQL and NoSQL databases?",
+                answer:
+                    "Yes, we work with MySQL, PostgreSQL, MongoDB, and other databases."
+            },
+            {
+                question: "Can you migrate existing databases?",
+                answer:
+                    "We perform secure and seamless database migrations with minimal downtime."
+            },
+            {
+                question: "Do you optimize database performance?",
+                answer:
+                    "Yes, we improve query performance, indexing, and database scalability."
+            },
+            {
+                question: "Is data security ensured?",
+                answer:
+                    "We implement encryption, access control, and secure backup strategies."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/database.svg",
@@ -310,7 +502,7 @@ export const servicesData: Record<string, Service> = {
 
     "networking-services": {
         title: "Networking Services Company in India | Techorc",
-        description: "Techorc delivers reliable enterprise networking services in India, specializing in the design, implementation, and management of secure network infrastructures. We support businesses in Hyderabad and Bangalore with robust connectivity solutions, ensuring seamless data flow and minimized downtime for critical operations.",
+        description: "Techorc delivers networking solutions in India, helping businesses maintain secure and efficient connectivity. From Coimbatore, Tamil Nadu, we serve clients across India with reliable, scalable, and well-managed network infrastructure.",
         keywords: ["Networking Services India", "Network Security"],
         heroTitle: "Networking Services",
         heroDescription: "Secure and scalable networking.",
@@ -322,7 +514,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Monitoring", description: "Performance tracking." },
             { title: "Maintenance", description: "Ongoing support." }
         ],
-        faqs: generateFAQs("Networking Services"),
+        faqs: [
+            {
+                question: "What networking services do you provide?",
+                answer:
+                    "We provide network design, security, monitoring, and maintenance services."
+            },
+            {
+                question: "Do you implement secure network infrastructures?",
+                answer:
+                    "Yes, we build secure and scalable enterprise networks."
+            },
+            {
+                question: "Can you manage WAN and LAN networks?",
+                answer:
+                    "We manage LAN, WAN, and SD-WAN environments."
+            },
+            {
+                question: "Do you offer ongoing network monitoring?",
+                answer:
+                    "Yes, we monitor performance and security continuously."
+            },
+            {
+                question: "Is networking support available across India?",
+                answer:
+                    "Yes, we support businesses across India and globally."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/networking.svg",
@@ -332,7 +551,7 @@ export const servicesData: Record<string, Service> = {
 
     "ecommerce-solutions": {
         title: "E-commerce Solutions Company in India | Techorc",
-        description: "Techorc is a leading e-commerce development company in India, creating custom online stores that drive sales and customer loyalty. We help retailers in Mumbai and Delhi NCR build scalable e-commerce platforms with secure payment gateways, inventory management, and intuitive user interfaces.",
+        description: "Techorc offers e-commerce development services in India, building secure and scalable online stores for growing businesses. Based in Coimbatore, Tamil Nadu, we serve clients across India with conversion-focused and performance-driven e-commerce platforms.",
         keywords: ["Ecommerce Development India", "Online Store Development"],
         heroTitle: "E-commerce Solutions",
         heroDescription: "Scalable online stores for businesses.",
@@ -344,7 +563,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Inventory Management", description: "Product & order control." },
             { title: "Scalability", description: "Growth-ready architecture." }
         ],
-        faqs: generateFAQs("E-commerce Solutions"),
+        faqs: [
+            {
+                question: "What type of e-commerce platforms do you build?",
+                answer:
+                    "We build custom e-commerce platforms, B2B, B2C, and marketplace solutions."
+            },
+            {
+                question: "Do you integrate payment gateways?",
+                answer:
+                    "Yes, we integrate secure payment gateways and checkout systems."
+            },
+            {
+                question: "Can your e-commerce platforms scale?",
+                answer:
+                    "Our platforms are built to handle high traffic and large product catalogs."
+            },
+            {
+                question: "Do you integrate inventory management?",
+                answer:
+                    "Yes, we integrate inventory, order, and CRM systems."
+            },
+            {
+                question: "Is security included?",
+                answer:
+                    "Yes, we follow best practices for data protection and transaction security."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/ecommerce.svg",
@@ -353,7 +599,7 @@ export const servicesData: Record<string, Service> = {
     },
     "cloud-integration-services": {
         title: "Cloud Integration Services Company in India | Techorc",
-        description: "Techorc offers specialized cloud integration services in India, helping businesses seamlessly migrate, integrate, and optimize their applications on AWS, Azure, and Google Cloud. We serve clients in Bangalore and Hyderabad with secure, cloud-native solutions that reduce operational costs and enhance system scalability.",
+        description: "Techorc provides cloud integration services in India, helping businesses migrate, manage, and optimize cloud infrastructure. From Coimbatore, Tamil Nadu, we support clients across India with secure, scalable, and performance-focused cloud solutions.",
         keywords: ["Cloud Integration Services India", "AWS Migration", "Azure Cloud Services", "DevOps Automation"],
         heroTitle: "Cloud Integration Services",
         heroDescription: "Secure, scalable, and efficient cloud integration solutions.",
@@ -365,7 +611,34 @@ export const servicesData: Record<string, Service> = {
             { title: "DevOps Automation", description: "CI/CD pipelines for faster and reliable deployments." },
             { title: "Cloud Security", description: "Securing cloud infrastructure and applications." }
         ],
-        faqs: generateFAQs("Cloud Integration"),
+        faqs: [
+            {
+                question: "What cloud integration services do you offer?",
+                answer:
+                    "We provide cloud migration, cloud-native development, DevOps automation, and cloud security services."
+            },
+            {
+                question: "Do you help migrate from on-premise to cloud?",
+                answer:
+                    "Yes, we perform seamless and secure cloud migrations with minimal downtime."
+            },
+            {
+                question: "Do you build cloud-native applications?",
+                answer:
+                    "Yes, we build applications optimized for cloud platforms like AWS and Azure."
+            },
+            {
+                question: "Is DevOps automation included?",
+                answer:
+                    "Yes, we implement CI/CD pipelines for faster and reliable deployments."
+            },
+            {
+                question: "Do you provide cloud security services?",
+                answer:
+                    "Yes, we secure cloud infrastructure, applications, and data."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/cloud.svg",
@@ -374,7 +647,7 @@ export const servicesData: Record<string, Service> = {
     },
     "ai-ml-development": {
         title: "AI & ML Development Company in India | Techorc",
-        description: "Leading AI & ML development company in India delivering advanced data-driven business solutions. Our experts in Bangalore and Pune specialize in building custom predictive analytics models, intelligent automation systems, and natural language processing tools that transform raw data into actionable business insights.",
+        description: "Techorc offers AI, machine learning, and data solutions in India, enabling businesses to leverage intelligent automation and analytics. Based in Coimbatore, Tamil Nadu, we serve organizations across India with scalable, secure, and data-driven solutions.",
         keywords: ["AI ML Development India", "Machine Learning Services", "Predictive Analytics", "Data Engineering"],
         heroTitle: "AI, ML & Data Solutions",
         heroDescription: "Intelligent automation powered by AI and machine learning.",
@@ -386,7 +659,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Natural Language Processing", description: "Chatbots and text analysis solutions." },
             { title: "Data Engineering", description: "Scalable data pipelines and analytics systems." }
         ],
-        faqs: generateFAQs("AI & ML Development"),
+        faqs: [
+            {
+                question: "What AI and ML services do you offer?",
+                answer:
+                    "We offer predictive analytics, machine learning models, NLP, and data engineering services."
+            },
+            {
+                question: "Do you build custom machine learning models?",
+                answer:
+                    "Yes, we build custom ML models tailored to specific business needs."
+            },
+            {
+                question: "Do you provide NLP solutions like chatbots?",
+                answer:
+                    "Yes, we develop chatbots and text analysis solutions using NLP."
+            },
+            {
+                question: "Do you handle data engineering and pipelines?",
+                answer:
+                    "Yes, we build scalable data pipelines and analytics systems."
+            },
+            {
+                question: "Can AI/ML improve business efficiency?",
+                answer:
+                    "Yes, AI/ML automates workflows and improves decision-making."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/ai.svg",
@@ -395,7 +695,7 @@ export const servicesData: Record<string, Service> = {
     },
     "it-consulting-services": {
         title: "IT Consulting Services Company in India | Techorc",
-        description: "Techorc provides professional IT consulting services in India for comprehensive strategic technology planning. We help specific businesses in Bangalore and Mumbai navigate digital transformation, optimize their system architecture, and align their IT infrastructure with long-term commercial goals for sustainable growth.",
+        description: "Techorc offers IT consulting services in India, helping businesses align technology with strategic goals. Operating from Coimbatore, Tamil Nadu, we support organizations across India with expert guidance and scalable IT solutions.",
         keywords: ["IT Consulting Services India", "Technology Consulting", "Digital Transformation Consulting"],
         heroTitle: "IT Consulting Services",
         heroDescription: "Strategic IT guidance for modern businesses.",
@@ -407,7 +707,34 @@ export const servicesData: Record<string, Service> = {
             { title: "Digital Transformation", description: "Modernizing IT processes and platforms." },
             { title: "Security Consulting", description: "Improving IT security and compliance." }
         ],
-        faqs: generateFAQs("IT Consulting"),
+        faqs: [
+            {
+                question: "What is IT consulting?",
+                answer:
+                    "IT consulting helps businesses align technology strategy with business goals."
+            },
+            {
+                question: "Do you provide digital transformation consulting?",
+                answer:
+                    "Yes, we help businesses modernize IT processes and platforms."
+            },
+            {
+                question: "Do you design software architecture?",
+                answer:
+                    "Yes, we design scalable and secure software architectures."
+            },
+            {
+                question: "Do you offer security consulting?",
+                answer:
+                    "Yes, we improve IT security and compliance for businesses."
+            },
+            {
+                question: "Is IT consulting available in Bangalore and Mumbai?",
+                answer:
+                    "Yes, we provide IT consulting services in Bangalore, Mumbai, and across India."
+            }
+        ]
+        ,
         serviceAreas: defaultServiceAreas,
 
         imageSrc: "/images/it.svg",

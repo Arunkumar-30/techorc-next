@@ -30,12 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: service.description,
         keywords: service.keywords || [],
         alternates: {
-            canonical: `https://techorc.in/${slug}`,
+            canonical: `https://techorc.in/services/${slug}`,
         },
         openGraph: {
             title: service.title,
             description: service.description,
-            url: `https://techorc.in/${slug}`,
+            url: `https://techorc.in/services/${slug}`,
             siteName: "Techorc",
             type: "website",
             locale: "en_IN",
@@ -163,7 +163,7 @@ export default async function ServicePage({ params }: Props) {
                             {service.serviceAreas?.length > 0 && (
                                 <div className="bg-blue-50/50 rounded-2xl p-8 border border-blue-50">
                                     <h3 className="text-xl font-bold text-gray-900 mb-4">
-                                        Serving Clients In
+                                        Service Availability
                                     </h3>
                                     <div className="flex flex-wrap gap-3">
                                         {service.serviceAreas.map((area, index) => (

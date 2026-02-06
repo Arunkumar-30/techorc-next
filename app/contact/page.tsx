@@ -114,10 +114,10 @@ export default function ContactPage() {
                                             Call Us
                                         </h3>
                                         <a
-                                            href="tel:+919677173084"
+                                            href="tel:+918300186855"
                                             className="text-gray-600 hover:text-[#00a8f2] transition-colors font-medium block mb-1"
                                         >
-                                            +91 96771 73084 / 94889 77565 / 94422 23512
+                                            +91 8300186855
                                         </a>
                                         <div className="flex items-center gap-2 text-sm text-gray-500">
                                             <FiClock />

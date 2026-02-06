@@ -109,8 +109,8 @@ export default function SupportPage() {
                                 </svg>
                             </div>
                             <h3 className="font-bold text-gray-900 text-lg mb-2">Phone Support</h3>
-                            <a href="tel:+919677173084" className="text-green-600 hover:underline">
-                                +91 96771 73084
+                            <a href="tel:+918300186855" className="text-green-600 hover:underline">
+                                +91 8300186855
                             </a>
                         </div>
 

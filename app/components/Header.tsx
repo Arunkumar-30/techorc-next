@@ -68,7 +68,7 @@ export default function Header() {
                                             {Object.entries(servicesData).slice(0, 7).map(([key, data]) => (
                                                 <Link
                                                     key={key}
-                                                    href={`/${key}`}
+                                                    href={`/services/${key}`}
                                                     className="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-[#00a8f2] rounded-lg transition-colors truncate hover:bg-gray-50"
                                                 >
                                                     {data.heroTitle}
@@ -82,7 +82,7 @@ export default function Header() {
                                             {Object.entries(servicesData).slice(7).map(([key, data]) => (
                                                 <Link
                                                     key={key}
-                                                    href={`/${key}`}
+                                                    href={`/services/${key}`}
                                                     className="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-[#00a8f2] rounded-lg transition-colors truncate hover:bg-gray-50"
                                                 >
                                                     {data.heroTitle}

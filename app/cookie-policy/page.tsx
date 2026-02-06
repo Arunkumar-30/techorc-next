@@ -120,8 +120,8 @@ export default function CookiePolicyPage() {
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
                         <p className="text-gray-600 mb-6">
                             If you have any questions about our Cookie Policy, please contact us at{' '}
-                            <a href="mailto:privacy@techorc.com" className="text-[#00a8f2] hover:underline">
-                                privacy@techorc.com
+                            <a href="mailto:sales@techorc.com" className="text-[#00a8f2] hover:underline">
+                                sales@techorc.com
                             </a>.
                         </p>
 
