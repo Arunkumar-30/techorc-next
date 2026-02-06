@@ -38,6 +38,7 @@ export default function TechStack() {
                                     alt={tech.name}
                                     width={120}
                                     height={50}
+                                    loading="lazy"
                                     className="object-contain w-auto h-10 md:h-12 opacity-90 md:opacity-60 group-hover:opacity-100 transition-opacity"
                                     onError={(e) => {
                                         e.currentTarget.style.display = 'none';
@@ -53,6 +54,7 @@ export default function TechStack() {
                                     alt={tech.name}
                                     width={120}
                                     height={50}
+                                    loading="lazy"
                                     className="object-contain w-auto h-10 md:h-12 opacity-90 md:opacity-60 group-hover:opacity-100 transition-opacity"
                                 />
                             </div>
@@ -70,6 +72,8 @@ export default function TechStack() {
                                     alt={tech.name}
                                     width={120}
                                     height={50}
+                                    loading="lazy"
+
                                     className="object-contain w-auto h-10 md:h-12 opacity-60 group-hover:opacity-100 transition-opacity"
                                 />
                             </div>
@@ -82,6 +86,8 @@ export default function TechStack() {
                                     alt={tech.name}
                                     width={120}
                                     height={50}
+
+                                    loading="lazy"
                                     className="object-contain w-auto h-10 md:h-12 opacity-60 group-hover:opacity-100 transition-opacity"
                                 />
                             </div>

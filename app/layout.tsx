@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -41,7 +42,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    nocache: true,
     googleBot: {
       index: true,
       follow: true,
@@ -50,6 +50,7 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+
   openGraph: {
     title: "Techorc | Software & IT Solutions Company India",
     description:
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
     title: "Techorc | Software & IT Solutions Company India",
     description:
       "Leading software and IT solutions company in India specializing in web development, mobile apps, and custom software.",
-    images: ["/favicon.png"],
+    images: ["https://support.techorc.in/images/hero-vector.svg"],
   },
 };
 
@@ -84,6 +85,41 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${openSans.variable} font-sans antialiased bg-gray-50 text-gray-900`}
       >
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "name": "Techorc",
+                  "url": "https://support.techorc.in",
+                  "logo": "https://support.techorc.in/favicon.png",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/techorc",
+                    "https://www.facebook.com/techorc"
+                  ]
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "name": "Techorc",
+                  "url": "https://support.techorc.in",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Coimbatore",
+                    "addressRegion": "Tamil Nadu",
+                    "addressCountry": "IN"
+                  },
+                  "areaServed": ["India", "Global"]
+                }
+              ]
+            }),
+          }}
+        />
+
         <Header />
         <main className="min-h-screen">
           <div className="max-w-[2000px] mx-auto">
@@ -91,6 +127,8 @@ export default function RootLayout({
           </div>
         </main>
         <Footer />
+
+
       </body>
     </html>
   );

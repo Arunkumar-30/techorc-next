@@ -20,7 +20,7 @@ export default function ServiceCard({ title, description, link, imageSrc, color 
                     className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3"
                     style={{ backgroundColor: `${color}` }} // 15 is for ~10% opacity hex
                 >
-                    <Image src={imageSrc} width={36} height={36} alt={title} className="w-9 h-9" />
+                    <Image src={imageSrc} width={36} height={36} alt={title} loading="lazy" className="w-9 h-9" />
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">

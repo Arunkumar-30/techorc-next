@@ -123,6 +123,7 @@ export default function Hero() {
                                     width={120}
                                     alt={logo.alt}
                                     className="object-fill max-h-12 md:max-h-16 w-auto"
+                                    loading="lazy"
                                 />
                             </div>
                         ))}

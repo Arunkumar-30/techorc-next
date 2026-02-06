@@ -40,12 +40,11 @@ export const metadata: Metadata = {
         title: "About Techorc | High-Performance Software Development Team in India",
         description:
             "Discover Techorc's story. We are a specialized team of software engineers and designers in India dedicated to building scalable, high-performance digital solutions.",
-        images: ["/images/about-vector.svg"],
+        images: ["https://support.techorc.in/images/about-vector.svg"],
     },
     robots: {
         index: true,
         follow: true,
-        nocache: true,
         googleBot: {
             index: true,
             follow: true,
@@ -54,6 +53,7 @@ export const metadata: Metadata = {
             "max-video-preview": -1,
         },
     },
+
 };
 
 export default function AboutPage() {
@@ -128,7 +128,9 @@ export default function AboutPage() {
                                 width={500}
                                 height={400}
                                 alt="About Techorc"
+                                loading="lazy"
                                 className="w-full h-auto"
+
                             />
                         </div>
                     </div>

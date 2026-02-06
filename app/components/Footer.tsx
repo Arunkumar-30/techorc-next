@@ -17,6 +17,7 @@ export default function Footer() {
                                 height={48}
                                 alt="Techorc"
                                 className="w-[160px] "
+                                priority
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
@@ -42,6 +43,7 @@ export default function Footer() {
                                         alt={social.name}
                                         width={18}
                                         height={18}
+                                        loading="lazy"
                                         className="w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition-opacity" // Icons likely colored, make white for dark theme? Or keep original? User said "icons added", usually means branding. Let's try white for consistency with dark theme.
                                     />
                                 </Link>

@@ -17,7 +17,7 @@ export default function AboutFeature({ title, description, icon, color }: AboutF
             <div
                 className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center mb-6 ${color} transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110`}
             >
-                <Image src={icon} width={40} height={40} alt={title} className="w-8 h-8 md:w-10 md:h-10" />
+                <Image src={icon} width={40} height={40} alt={title} loading="lazy" className="w-8 h-8 md:w-10 md:h-10" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">{title}</h3>
             <p className="text-gray-600 text-sm leading-relaxed">{description}</p>

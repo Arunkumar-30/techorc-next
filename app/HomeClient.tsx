@@ -157,6 +157,8 @@ export default function HomeClient() {
                                 height={400}
                                 alt="About us illustration"
                                 className="w-full h-auto"
+
+                                loading="lazy"
                             />
                         </div>
                     </div>

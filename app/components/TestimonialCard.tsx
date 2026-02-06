@@ -21,6 +21,7 @@ export default function TestimonialCard({ quote, clientName, clientRole, clientI
                         src={clientImage}
                         alt={clientName}
                         fill
+                        loading="lazy"
                         className="rounded-full object-cover border-2 border-white shadow-md group-hover:border-blue-100 transition-colors"
                     />
                 </div>

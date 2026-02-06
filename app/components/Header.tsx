@@ -150,7 +150,7 @@ export default function Header() {
                                     {Object.entries(servicesData).map(([key, data]) => (
                                         <Link
                                             key={key}
-                                            href={`/${key}`}
+                                            href={`/services/${key}`}
                                             onClick={() => setIsOpen(false)}
                                             className="block py-2 px-2 text-[14px] font-medium text-gray-600 hover:text-[#00a8f2] hover:bg-blue-50 rounded-md transition-colors truncate"
                                         >
