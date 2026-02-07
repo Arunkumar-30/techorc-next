@@ -30,12 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: service.description,
         keywords: service.keywords || [],
         alternates: {
-            canonical: `https://support.techorc.in/services/${slug}`,
+            canonical: `https://techorc.in/services/${slug}`,
         },
         openGraph: {
             title: service.title,
             description: service.description,
-            url: `https://support.techorc.in/services/${slug}`,
+            url: `https://techorc.in/services/${slug}`,
             siteName: "Techorc",
             type: "website",
             locale: "en_IN",
@@ -102,7 +102,7 @@ export default async function ServicePage({ params }: Props) {
                         provider: {
                             "@type": "Organization",
                             name: "Techorc",
-                            url: "https://support.techorc.in",
+                            url: "https://techorc.in",
                         },
                         areaServed: {
                             "@type": "Country",
@@ -117,6 +117,7 @@ export default async function ServicePage({ params }: Props) {
                 {/* JSON-LD Schema */}
                 {faqSchema && (
                     <Script
+                        id="faq-schema"
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{
                             __html: JSON.stringify(faqSchema),

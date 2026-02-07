@@ -14,13 +14,13 @@ export const metadata: Metadata = {
         "Customer Support Techorc",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/support",
+        canonical: "https://techorc.in/support",
     },
     openGraph: {
         title: "Help Center | Techorc Support",
         description:
             "Get help and support for Techorc services. Find answers to frequently asked questions or contact our support team.",
-        url: "https://support.techorc.in/support",
+        url: "https://techorc.in/support",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

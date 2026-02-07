@@ -12,13 +12,13 @@ export const metadata: Metadata = {
         "User Responsibility India",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/terms-of-service",
+        canonical: "https://techorc.in/terms-of-service",
     },
     openGraph: {
         title: "Terms of Service | Techorc",
         description:
             "Read Techorc's Terms of Service to understand the rules and guidelines for using our website and services.",
-        url: "https://support.techorc.in/terms-of-service",
+        url: "https://techorc.in/terms-of-service",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

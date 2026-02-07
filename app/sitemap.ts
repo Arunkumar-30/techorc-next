@@ -4,7 +4,7 @@ import { servicesData } from '@/app/data/services'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://support.techorc.in'
+    const baseUrl = 'https://techorc.in'
 
     // Service pages
     const serviceUrls = Object.keys(servicesData).map((slug) => ({

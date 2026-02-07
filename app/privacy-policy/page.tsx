@@ -12,13 +12,13 @@ export const metadata: Metadata = {
         "Data Privacy India",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/privacy-policy",
+        canonical: "https://techorc.in/privacy-policy",
     },
     openGraph: {
         title: "Privacy Policy | Techorc",
         description:
             "Read Techorc's Privacy Policy to understand how we collect, use, and protect your personal information.",
-        url: "https://support.techorc.in/privacy-policy",
+        url: "https://techorc.in/privacy-policy",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

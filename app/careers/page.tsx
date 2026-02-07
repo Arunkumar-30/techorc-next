@@ -14,13 +14,13 @@ export const metadata: Metadata = {
         "Tech Jobs Coimbatore",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/careers",
+        canonical: "https://techorc.in/careers",
     },
     openGraph: {
         title: "Careers at Techorc | Join Our Team",
         description:
             "Explore career opportunities at Techorc. We're looking for talented developers, designers, and innovators to join our growing team.",
-        url: "https://support.techorc.in/careers",
+        url: "https://techorc.in/careers",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

@@ -12,13 +12,13 @@ export const metadata: Metadata = {
         "Browser Cookies Techorc",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/cookie-policy",
+        canonical: "https://techorc.in/cookie-policy",
     },
     openGraph: {
         title: "Cookie Policy | Techorc",
         description:
             "Learn how Techorc uses cookies to enhance your browsing experience and improve our website services.",
-        url: "https://support.techorc.in/cookie-policy",
+        url: "https://techorc.in/cookie-policy",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

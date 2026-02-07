@@ -15,7 +15,7 @@ const openSans = Open_Sans({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://support.techorc.in"),
+  metadataBase: new URL("https://techorc.in"),
   title: {
     default: "Techorc | Software & IT Solutions Company India",
     template: "%s | Techorc",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Techorc | Software & IT Solutions Company India",
     description:
       "Techorc is a trusted software and IT solutions company in India offering web development, mobile apps, custom software, and UI/UX design services.",
-    url: "https://support.techorc.in",
+    url: "https://techorc.in",
     siteName: "Techorc",
     type: "website",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Techorc | Software & IT Solutions Company India",
     description:
       "Leading software and IT solutions company in India specializing in web development, mobile apps, and custom software.",
-    images: ["https://support.techorc.in/images/hero-vector.svg"],
+    images: ["https://techorc.in/images/hero-vector.svg"],
   },
 };
 
@@ -96,8 +96,8 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "name": "Techorc",
-                  "url": "https://support.techorc.in",
-                  "logo": "https://support.techorc.in/favicon.png",
+                  "url": "https://techorc.in",
+                  "logo": "https://techorc.in/favicon.png",
                   "sameAs": [
                     "https://www.linkedin.com/company/techorc",
                     "https://www.facebook.com/techorc"
@@ -106,7 +106,7 @@ export default function RootLayout({
                 {
                   "@type": "LocalBusiness",
                   "name": "Techorc",
-                  "url": "https://support.techorc.in",
+                  "url": "https://techorc.in",
                   "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Coimbatore",

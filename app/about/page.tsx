@@ -16,13 +16,13 @@ export const metadata: Metadata = {
         "Tech Experts India",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/about",
+        canonical: "https://techorc.in/about",
     },
     openGraph: {
         title: "About Techorc | High-Performance Software Development Team in India",
         description:
             "Discover Techorc's story. We are a specialized team of software engineers and designers in India dedicated to building scalable, high-performance digital solutions.",
-        url: "https://support.techorc.in/about",
+        url: "https://techorc.in/about",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         title: "About Techorc | High-Performance Software Development Team in India",
         description:
             "Discover Techorc's story. We are a specialized team of software engineers and designers in India dedicated to building scalable, high-performance digital solutions.",
-        images: ["https://support.techorc.in/images/about-vector.svg"],
+        images: ["https://techorc.in/images/about-vector.svg"],
     },
     robots: {
         index: true,

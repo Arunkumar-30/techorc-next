@@ -13,13 +13,13 @@ export const metadata: Metadata = {
         "Software Engineers Coimbatore",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/team",
+        canonical: "https://techorc.in/team",
     },
     openGraph: {
         title: "Our Team | Meet the Techorc Experts",
         description:
             "Meet the talented team behind Techorc. Our experienced developers, designers, and strategists are committed to delivering exceptional software solutions.",
-        url: "https://support.techorc.in/team",
+        url: "https://techorc.in/team",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

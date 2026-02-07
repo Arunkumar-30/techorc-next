@@ -15,13 +15,13 @@ export const metadata: Metadata = {
         "Software Development Inquiry",
     ],
     alternates: {
-        canonical: "https://support.techorc.in/contact",
+        canonical: "https://techorc.in/contact",
     },
     openGraph: {
         title: "Contact Techorc | Get a Quote for Your Software Project",
         description:
             "Get in touch with Techorc today. Whether you have a project idea, need IT consulting, or want to join our team, we're here to help you achieve your goals.",
-        url: "https://support.techorc.in/contact",
+        url: "https://techorc.in/contact",
         siteName: "Techorc",
         type: "website",
         locale: "en_IN",

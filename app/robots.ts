@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://support.techorc.in/sitemap.xml',
+        sitemap: 'https://techorc.in/sitemap.xml',
     }
 }
